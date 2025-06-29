@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<title>测评 - Daimayuan Online Judge</title>
+		
+		<script type="text/javascript">
+		uojHome = 'http://oj.daimayuan.top';
+	</script>
+
+		<!-- Bootstrap core CSS -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/bootstrap.min.css?v=2019.5.31" />		<!-- Bootstrap Glyphicons CSS-->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/bootstrap-glyphicons.min.css?v=2019.5.31" />
+		<!-- Custom styles for this template -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/uoj-theme.css?v=2.3333" />		
+		<!-- jQuery (necessary for Bootstrap\'s JavaScript plugins) -->
+		<script src="http://oj.daimayuan.top/js/jquery.min.js"></script>		
+		<!-- jQuery autosize -->
+		<script src="http://oj.daimayuan.top/js/jquery.autosize.min.js"></script>		<script type="text/javascript">
+			$(document).ready(function() {
+				$('textarea').autosize();
+			});
+		</script>
+		
+		<!-- jQuery cookie -->
+		<script src="http://oj.daimayuan.top/js/jquery.cookie.min.js"></script>		
+		<!-- jQuery modal -->
+		<script src="http://oj.daimayuan.top/js/jquery.modal.js"></script>		
+				
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="http://oj.daimayuan.top/js/popper.min.js?v=2019.5.31"></script>		<script src="http://oj.daimayuan.top/js/bootstrap.min.js?v=2019.5.31"></script>		
+		<!-- Color converter -->
+		<script src="http://oj.daimayuan.top/js/color-converter.min.js"></script>		
+		<!-- uoj -->
+		<script src="file:///D:/oj.daimayuan.top/js/uoj.js"></script>	
+		<!-- readmore -->
+		<script src="http://oj.daimayuan.top/js/readmore/readmore.min.js"></script>		
+		<!-- LAB -->
+		<script src="http://oj.daimayuan.top/js/LAB.min.js"></script>
+		<!-- favicon -->
+		<link rel="shortcut icon" href="http://oj.daimayuan.top/images/favicon.ico" />
+		
+				
+				
+				<!-- MD5 -->
+		<script src="http://oj.daimayuan.top/js/md5.min.js"></script>				
+				
+				
+				
+				
+		
+				
+				
+				
+				
+				
+		<!-- shjs -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/sh_typical.min.css" />		<script src="http://oj.daimayuan.top/js/sh_main.min.js"></script>		<script type="text/javascript">$(document).ready(function(){sh_highlightDocument()})</script>
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<script type="text/javascript">
+		before_window_unload_message = null;
+		$(window).on('beforeunload', function() {
+			if (before_window_unload_message !== null) {
+				return before_window_unload_message;
+			}
+		});
+		</script>
+		
+			</head>
+	<body role="document">
+		<div class="container theme-showcase" role="main">
+						<div>
+				<ul class="nav nav-pills float-right" role="tablist">
+									<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="uoj_username_a">
+							<span id="uoj_username_page" class="uoj-username" data-rating="1500" data-link="0"></span> 						</a>
+						
+						<ul class="dropdown-menu" role="menu">
+							<li role="presentation"><a class="dropdown-item" id="my_chat">个人信息</a></li>
+							<li role="presentation"><a class="dropdown-item" href="file:///D:/oj.daimayuan.top/user/system-msg.html">系统消息&nbsp;&nbsp;</a></li>
+													</ul>
+					</li>
+					<li id="login" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/login.html">登录</a></li>
+					<li id="register" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/register.html">注册</a></li>
+					<li id="logout" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/logout.html">登出</a></li>
+								</ul><script type="text/javascript">
+							var uoj_username = localStorage.getItem("uoj-username");
+							if (uoj_username != null) {
+								document.querySelector("#uoj_username_page").innerHTML = uoj_username;
+								document.querySelector("#my_chat").href = "file:///D:/oj.daimayuan.top/user/profile/" + uoj_username + ".html";
+								document.querySelector("#login").hidden = true;
+								document.querySelector("#register").hidden = true;
+							}
+							else {
+								document.querySelector("#uoj_username_a").hidden = true;
+								document.querySelector("#logout").hidden = true;
+							}
+						</script>
+				<h1 class="d-none d-sm-block"><a href="file:///D:/oj.daimayuan.top.html"><img src="http://oj.daimayuan.top/images/logo_small.png" alt="Logo" class="img-rounded" style="width:39px; height:39px;" /></a> Daimayuan Online Judge</h1>
+				<h1 class="d-block d-sm-none">Home</h1>
+			</div>
+			
+			<div class="navbar navbar-light navbar-expand-md bg-light mb-4" role="navigation">
+	<a class="navbar-brand" href="../oj.daimayuan.top.html">Home</a>
+	<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="nav navbar-nav mr-auto">
+			<li class="nav-item"><a class="nav-link" href="contests"><span class="glyphicon glyphicon-stats"></span> 比赛</a></li>
+			<li class="nav-item"><a class="nav-link" href="problems"><span class="glyphicon glyphicon-list-alt"></span> 题库</a></li>
+			<li class="nav-item"><a class="nav-link" href="submissions"><span class="glyphicon glyphicon-tasks"></span> 提交记录</a></li>
+			<li class="nav-item"><a class="nav-link" href="courses"><span class="glyphicon glyphicon-education"></span> 课程</a></li>
+		</ul>
+		
+		<form id="form-search-problem" class="form-inline my-2 my-lg-0" method="get">
+			 <div class="input-group">
+				<input type="text" class="form-control" name="search" id="input-search" placeholder=题目搜索 />  
+				<div class="input-group-append">
+					<button type="submit" class="btn btn-search btn-outline-primary" id="submit-search"><span class="glyphicon glyphicon-search"></span></button>
+				</div>
+			</div>
+		</form>
+		<script src="file:///D:/oj.daimayuan.top/js/uoj.js"></script>
+	</div><!--/.nav-collapse -->
+</div>
+<script type="text/javascript">
+	var zan_link = '';
+	$('#form-search-problem').submit(function(e) {
+		e.preventDefault();
+		
+		url = 'http://oj.daimayuan.top/problems';
+		qs = [];
+		$(['search']).each(function () {
+			if ($('#input-' + this).val()) {
+				qs.push(this + '=' + encodeURIComponent($('#input-' + this).val()));
+			}
+		});
+		if (qs.length > 0) {
+			url += '?' + qs.join('&');
+		}
+		location.href = url;
+	});
+</script>						
+			<div class="uoj-content">
+<h2 class="page-header">测评</h2>
+<form id="form-login" class="form-horizontal" method="post">
+  <div id="div-username" class="form-group">
+	<label for="input-username" class="col-sm-2 control-label">Hack ID</label>
+	<div class="col-sm-3">
+	  <input type="number" class="form-control" id="input-username" name="username" placeholder="输入 ID" min="1" />
+	  <span class="help-block" id="help-username">不输入默认为 1</span>
+	</div>
+  </div>
+  <div id="div-password" class="form-group">
+	<label for="input-password" class="col-sm-2 control-label">运行结果</label>
+	<div class="col-sm-6">
+		<div class="row">
+			<div class="col-sm-6">
+			<select class="form-control" id="input-password" name="password" style="width: 100%; margin-top: 5px;">
+			<option>数据错误</option>
+			<option class="uoj-score">AC</option>
+			<option class="uoj-score">WA</option>
+			<option class="uoj-score">RE</option>
+			<option class="uoj-score">TLE</option>
+			<option class="uoj-score">MLE</option>
+			</select>
+			</div>
+		</div>
+			<span class="help-block" id="help-password"><span class="uoj-score">AC</span> 与 <code>数据错误</code> 返回结果为 <span class="uoj-status">Failed.</span>，其他返回结果都是 <span class="uoj-status">Success!</span>。</span>
+		</div>
+  </div>
+  <div id="div-password" class="form-group">
+	<label for="input-password" class="col-sm-2 control-label">用时</label>
+	<div class="col-sm-3">
+	  <input type="number" class="form-control" id="input-havetime" name="password" placeholder="输入用时" min="0"/>
+	  <span class="help-block" id="help-password">不输入默认为 0</span>
+	</div>
+  </div>
+  <div id="div-password" class="form-group">
+	<label for="input-password" class="col-sm-2 control-label">内存</label>
+	<div class="col-sm-3">
+	  <input type="number" class="form-control" id="input-havememory" name="password" placeholder="输入内存" min="0" />
+	  <span class="help-block" id="help-password">不输入默认为 0</span>
+	</div>
+  </div>
+  <div class="col-sm-12">
+	  <button type="submit" id="button-submit1" class="btn btn-primary" onclick='see_num();'>查看输入数据</button>
+  </div>
+  <div id="div-password1" class="form-group" hidden>
+	<label for="input-password" class="col-sm-2 control-label">Input:</label>
+	<div class="col-sm-12">
+		<pre style='max-height: 200px' id="hack-num-id"></pre>
+	  <script type="text/javascript">
+	  	function see_num() {
+			var this_hack = document.getElementById("input-username").value;
+			document.getElementById("div-password1").hidden = false; window.event.returnValue = false;
+			document.getElementById("hack-num-id").innerHTML = localStorage.getItem("uoj_hack_id=" + this_hack + "?extra");
+	  	}
+	  </script>
+	</div>
+  </div>
+  <div id="div-password" class="form-group">
+	<label for="input-password" class="col-sm-2 control-label">Output:</label>
+	<div class="col-sm-12">
+	  <textarea class="form-control" id="input-numType"></textarea>
+	  <span class="help-block" id="help-password"></span>
+	</div>
+  </div>
+  <div id="div-password" class="form-group">
+	<label for="input-password" class="col-sm-2 control-label">Result:</label>
+	<div class="col-sm-12">
+	  <textarea class="form-control" id="input-numrest"></textarea>
+	  <span class="help-block" id="help-password"></span>
+	</div>
+  </div>
+<div class="form-group">
+	<div class="col-sm-offset-2 col-sm-3">
+	  <button type="submit" id="button-submit" class="btn btn-secondary">提交</button>
+	</div>
+		<script src="file:///D:/oj.daimayuan.top/js/doj.js"></script><script type="text/javascript">
+	document.getElementById("input-username").max = localStorage.getItem("last_hack_id");
+	document.getElementById("button-submit").onclick = function() {
+		var id = document.getElementById("input-username").value;
+		var selectElement = document.querySelector("#input-password");
+		var selectedIndex = selectElement.selectedIndex;
+		var newtype = selectElement.options[selectedIndex].text;
+		if (newtype == "AC" || newtype == "数据错误") 
+			localStorage.setItem("uoj_hack_id=" + id + "?type", "Failed.");
+		else 
+			localStorage.setItem("uoj_hack_id=" + id + "?type", "Success!");
+		var havetime = document.getElementById("input-havetime").value;
+		var havememory = document.getElementById("input-havememory").value;
+		var numtype = document.getElementById("input-numType").value;
+		if (newtype != "数据错误") 
+			localStorage.setItem("uoj_hack_id=" + id + "?test", newtype);
+		else 
+			localStorage.removeItem("uoj_hack_id=" + id + "?test");
+		localStorage.setItem("uoj_hack_id=" + id + "?judging_time", this_long_time);
+		if (havetime != "") 
+			localStorage.setItem("uoj_hack_id=" + id + "?time", havetime);
+		if (havememory != "") 
+			localStorage.setItem("uoj_hack_id=" + id + "?memory", havememory);
+		if (numtype != "")
+			localStorage.setItem("uoj_hack_id=" + id + "?output", numtype);
+		numtype = document.getElementById("input-numrest").value;
+		if (numtype != "")
+			localStorage.setItem("uoj_hack_id=" + id + "?result", numtype);
+		alert("测评完成");
+		window.location.href = "file:///D:/oj.daimayuan.top/hack/" + id + ".html";
+		window.event.returnValue = false;
+	};
+</script>
+  </div>
+</form>
+			</div>
+			<script type="text/javascript">
+				if (uoj_username == null || !(localStorage.getItem("uoj-user_" + uoj_username + "_gler") > 0)) {
+					document.querySelector("title").innerHTML = "403 - Daimayuan Online Judge";
+					document.querySelector(".uoj-content").innerHTML = '<div class="text-center"><div style="font-size:233px">403</div><p>禁止入内！ T_T</p></div>			';
+				}
+			</script>
+						<div class="uoj-footer">
+				<div class="btn-group dropright mb-3">
+					<button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+						<span class="glyphicon glyphicon-globe"></span> 简体中文					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="">简体中文</a>
+					</div>
+				</div>
+				
+				<ul class="list-inline"><li class="list-inline-item">Daimayuan Online Judge</li></ul>
+								<p>服务器时间: 2025-01-23 20:59:08 | <a href="https://github.com/UniversalOJ/UOJ-System" target="_blank">开源项目</a></p>
+			</div>
+					</div>
+		<script src="file:///D:/oj.daimayuan.top/js/doj.js"></script>
+		<!-- /container -->
+	</body>
+</html>

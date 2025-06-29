@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<title>域管理 - Daimayuan Online Judge</title>
+		
+		<script type="text/javascript">uojHome = 'http://oj.daimayuan.top'</script>
+
+		<!-- Bootstrap core CSS -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/bootstrap.min.css?v=2019.5.31" />		<!-- Bootstrap Glyphicons CSS-->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/bootstrap-glyphicons.min.css?v=2019.5.31" />
+		<!-- Custom styles for this template -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/uoj-theme.css?v=2.3333" />		
+		<!-- jQuery (necessary for Bootstrap\'s JavaScript plugins) -->
+		<script src="http://oj.daimayuan.top/js/jquery.min.js"></script>		
+		<!-- jQuery autosize -->
+		<script src="http://oj.daimayuan.top/js/jquery.autosize.min.js"></script>		<script type="text/javascript">
+			$(document).ready(function() {
+				$('textarea').autosize();
+			});
+		</script>
+		
+		<!-- jQuery cookie -->
+		<script src="http://oj.daimayuan.top/js/jquery.cookie.min.js"></script>		
+		<!-- jQuery modal -->
+		<script src="http://oj.daimayuan.top/js/jquery.modal.js"></script>		
+				
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="http://oj.daimayuan.top/js/popper.min.js?v=2019.5.31"></script>		<script src="http://oj.daimayuan.top/js/bootstrap.min.js?v=2019.5.31"></script>		
+		<!-- Color converter -->
+		<script src="http://oj.daimayuan.top/js/color-converter.min.js"></script>		
+		<!-- uoj -->
+		<script src="file:///D:/oj.daimayuan.top/js/uoj.js"></script>	
+		<!-- readmore -->
+		<script src="http://oj.daimayuan.top/js/readmore/readmore.min.js"></script>		
+		<!-- LAB -->
+		<script src="http://oj.daimayuan.top/js/LAB.min.js"></script>
+		<!-- favicon -->
+		<link rel="shortcut icon" href="http://oj.daimayuan.top/images/favicon.ico" />
+		
+				
+				
+				<!-- MD5 -->
+		<script src="http://oj.daimayuan.top/js/md5.min.js"></script>				
+				
+				
+				<!-- MathJax -->
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  tex2jax: {inlineMath: [['$','$']], displayMath: [['$$','$$']]}
+	});
+	MathJax.Hub.Register.StartupHook("End", function () {
+		Codeforces.runMathJaxListeners();
+	});
+	</script>
+	<script type="text/javascript" async
+			src="https://codeforces.com/mathjax.codeforces.org/MathJax.js?config=TeX-AMS_HTML-full"
+	>
+	</script>
+				
+		
+				
+				<!-- shjs -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/sh_typical.min.css" />		<script src="http://oj.daimayuan.top/js/sh_main.min.js"></script>		<script type="text/javascript">$(document).ready(function(){sh_highlightDocument()})</script>
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<script type="text/javascript">
+		before_window_unload_message = null;
+		$(window).on('beforeunload', function() {
+			if (before_window_unload_message !== null) {
+				return before_window_unload_message;
+			}
+		});
+		</script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+		
+			</head>
+	<body role="document">
+		<div class="container theme-showcase" role="main">
+						<div>
+				<ul class="nav nav-pills float-right" role="tablist">
+									<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="uoj_username_a">
+							<span id="uoj_username_page" class="uoj-username" data-rating="1500" data-link="0"></span> 						</a>
+						
+						<ul class="dropdown-menu" role="menu">
+							<li role="presentation"><a class="dropdown-item" id="my_chat">个人信息</a></li>
+							<li role="presentation"><a class="dropdown-item" href="file:///D:/oj.daimayuan.top/user/system-msg.html">系统消息&nbsp;&nbsp;</a></li>
+													</ul>
+					</li>
+					<li id="login" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/login.html">登录</a></li>
+					<li id="register" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/register.html">注册</a></li>
+					<li id="logout" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/logout.html">登出</a></li>
+								</ul><script type="text/javascript">
+							var uoj_username = localStorage.getItem("uoj-username");
+							if (uoj_username != null) {
+								document.querySelector("#uoj_username_page").innerHTML = uoj_username;
+								document.querySelector("#my_chat").href = "file:///D:/oj.daimayuan.top/user/profile/" + uoj_username + ".html";
+								document.querySelector("#login").hidden = true;
+								document.querySelector("#register").hidden = true;
+							}
+							else {
+								document.querySelector("#uoj_username_a").hidden = true;
+								document.querySelector("#logout").hidden = true;
+							}
+						</script>
+				<h1 class="d-none d-sm-block"><a href="file:///D:/oj.daimayuan.top.html"><img src="http://oj.daimayuan.top/images/logo_small.png" alt="Logo" class="img-rounded" style="width:39px; height:39px;" /></a> Daimayuan Online Judge</h1>
+				<h1 class="d-block d-sm-none">Home</h1>
+			</div>
+			
+			<div class="navbar navbar-light navbar-expand-md bg-light mb-4" role="navigation">
+	<a class="navbar-brand" href="../oj.daimayuan.top.html">Home</a>
+	<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="nav navbar-nav mr-auto">
+			<li class="nav-item"><a class="nav-link" href="contests"><span class="glyphicon glyphicon-stats"></span> 比赛</a></li>
+			<li class="nav-item"><a class="nav-link" href="problems"><span class="glyphicon glyphicon-list-alt"></span> 题库</a></li>
+			<li class="nav-item"><a class="nav-link" href="submissions"><span class="glyphicon glyphicon-tasks"></span> 提交记录</a></li>
+			<li class="nav-item"><a class="nav-link" href="courses"><span class="glyphicon glyphicon-education"></span> 课程</a></li>
+		</ul>
+		
+		<form id="form-search-problem" class="form-inline my-2 my-lg-0" method="get">
+			 <div class="input-group">
+				<input type="text" class="form-control" name="search" id="input-search" placeholder=题目搜索 />  
+				<div class="input-group-append">
+					<button type="submit" class="btn btn-search btn-outline-primary" id="submit-search"><span class="glyphicon glyphicon-search"></span></button>
+				</div>
+			</div>
+		</form>
+		<script src="file:///D:/oj.daimayuan.top/js/uoj.js"></script>
+	</div><!--/.nav-collapse -->
+</div>
+<script type="text/javascript">
+	var zan_link = '';
+	$('#form-search-problem').submit(function(e) {
+		e.preventDefault();
+		
+		url = 'http://oj.daimayuan.top/problems';
+		qs = [];
+		$(['search']).each(function () {
+			if ($('#input-' + this).val()) {
+				qs.push(this + '=' + encodeURIComponent($('#input-' + this).val()));
+			}
+		});
+		if (qs.length > 0) {
+			url += '?' + qs.join('&');
+		}
+		location.href = url;
+	});
+</script>						
+			<div class="uoj-content">
+		<div class="card my-1">
+			<div class="card-header collapsed" id="headerOne" data-toggle="collapse" data-target="#collapseOne" style="cursor:pointer;">
+				<h5 class="mb-0">用户 IP 地址</h5>
+			</div>
+			<div id="collapseOne" class="collapse">
+				<div class="card-body">
+					暂时没有用户 IP 地址信息 T_T 请稍后查看
+				</div>
+			</div>
+		</div>
+
+		<div class="card my-1">
+			<div class="card-header collapsed" id="headerTwo" data-toggle="collapse" data-target="#collapseTwo" style="cursor:pointer;">
+				<h5 class="mb-0">储存</h5>
+			</div>
+			<div id="collapseTwo" class="collapse">
+				<div class="card-body">
+
+					<div class="card my-1">
+						<div class="card-header collapsed" id="headerThree" data-toggle="collapse" data-target="#collapseThree" style="cursor:pointer;">
+							<h5 class="mb-0">OJ 用户信息</h5>
+						</div>
+						<div id="collapseThree" class="collapse">
+							<div class="card-body">
+								<div class="row">
+								<div class="col-sm-7">
+									<div class="row">
+									<div class="col-sm-7">
+										<div class="table-responsive">
+											<script type="text/javascript">
+												document.write("<div> OJ 超级管理员为 <span class='uoj-username'>" + localStorage.getItem("uoj-super_gler-user") + "</span>。</div>");
+											</script>
+											<table class="table table-bordered table-hover table-striped table-text-center">
+												<thead>
+													<tr><th colspan="233">OJ 用户 ID 与 rating</th></tr>
+													<tr>
+														<th style="width:5em">ID</th>
+														<th>用户</th>
+														<th style="width:5em">rating</th>
+													</tr>
+												</thead>
+												<tbody>
+												<script type="text/javascript">
+													for (var i = 1; ; i++) {
+														var this_user = localStorage.getItem("uoj-user-id=" + i);
+														if (this_user != null) {
+															document.write('<tr><td>' + i + '</td><td><span class="uoj-username">' + this_user + '</span></td><td>' + localStorage.getItem("uoj-user_" + this_user + "_rating") + '</td></tr>');
+														}
+														else 
+															break;
+													}
+												</script>
+												</tbody>
+											</table>
+											<script type="text/javascript">
+												var cnt = 1;
+													for ( ; ; cnt++) 
+														if (localStorage.getItem("uoj-user-id=" + cnt) == null) 
+															break;
+												cnt--;
+												document.write('<div class="text-right text-muted">OJ 共有 ' + cnt + ' 个用户</div>');
+											</script>
+									</div>
+								</div>
+									<div class="col-sm-5">
+										<div class="table-responsive">
+											<table class="table table-bordered table-hover table-striped table-text-center">
+												<thead>
+													<tr>
+														<th>用户</th>
+														<th style="width:6em">管理权限</th>
+													</tr>
+												</thead>
+												<tbody>
+												<script type="text/javascript">
+													for (var i = 1; ; i++) {
+														var this_user = localStorage.getItem("uoj-user-id=" + i);
+														if (this_user != null) {
+															document.write('<tr><td><span class="uoj-username">' + this_user + '</span></td><td>' + (localStorage.getItem("uoj-user_" + this_user + "_gler") > 0 ? "有" : "无") + '</td></tr>');
+														}
+														else 
+															break;
+													}
+												</script>
+												</tbody>
+											</table>
+											<script type="text/javascript">
+												var cnt = 0;
+													for (var i = 1; ; i++) {
+														if (localStorage.getItem("uoj-user-id=" + i) == null) 
+															break;
+														if (localStorage.getItem("uoj-user_" + localStorage.getItem("uoj-user-id=" + i) + "_gler") > 0) 
+															cnt++;
+													}
+												document.write('<div class="text-right text-muted">OJ 共有 ' + cnt + ' 名管理员</div>');
+											</script>
+										</div>
+									</div>
+								</div>
+									<hr/>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover table-striped table-text-center">
+											<thead>
+												<tr>
+													<th>用户</th>
+													<th style="width:10em">更改 Rating</th>
+													<th style="width:14em">更改 Tag</th>
+												</tr>
+											</thead>
+											<tbody>
+											<script type="text/javascript">
+
+function change_userrating(user) {
+	var text = prompt("请输入新的 rating：");
+	if (text != "" && text != null) {
+		localStorage.setItem("uoj-user_" + user + "_rating", Number(text));
+		localStorage.setItem("uoj-system-msg_count", Number(localStorage.getItem("uoj-system-msg_count")) + 1);
+		localStorage.setItem("uoj-system-msg_id=" + localStorage.getItem("uoj-system-msg_count") + "?user", user);
+		localStorage.setItem("uoj-system-msg_id=" + localStorage.getItem("uoj-system-msg_count") + "?text", '<tr><td><h4>Rating变化通知</h4><p><span class="uoj-username">' + user + '</span> 您好：</p>\n<p class="indent2">管理员已将您的Rating更新。当前Rating为 <strong style="color:red">' + text + '</strong>。</p></td><td>' + this_long_time + '</td></tr>');
+	}
+}
+function change_usertag(user) {
+	var text = prompt("请输入新的 Tag：");
+	if (text != "" && text != 0 && text != null) {
+		localStorage.setItem("uoj-user_" + user + "_tag", text);
+		localStorage.setItem("uoj-system-msg_count", Number(localStorage.getItem("uoj-system-msg_count")) + 1);
+		localStorage.setItem("uoj-system-msg_id=" + localStorage.getItem("uoj-system-msg_count") + "?user", user);
+		localStorage.setItem("uoj-system-msg_id=" + localStorage.getItem("uoj-system-msg_count") + "?text", '<tr><td><h4>Tag变化通知</h4><p><span class="uoj-username">' + user + '</span> 您好：</p>\n<p class="indent2">管理员已将您的Tag更改。当前Tag为 <strong style="color:red">' + text + '</strong>。</p></td><td>' + this_long_time + '</td></tr>');
+	}
+}
+function delet_usertag(user) {
+	var ok = confirm("确定删除 " + user + " 的 Tag 吗？");
+	if (ok) 
+		localStorage.removeItem("uoj-user_" + user + "_tag");
+}
+
+
+												for (var i = 1; ; i++) {
+													var this_user = localStorage.getItem("uoj-user-id=" + i);
+													if (this_user != null) {
+														document.write('<tr><td><span class="uoj-username">' + this_user + '</span></td><td><a onclick=\"change_userrating(\'' + this_user + '\');\" href=\"?change_userrating\">更新</a></td><td><a onclick=\"change_usertag(\'' + this_user + '\');\" href=\"?change_usertag\">更改/添加</a> <a onclick=\"delet_usertag(\'' + this_user + '\');\" href=\"?delet_usertag\">删除</a></td></tr>');
+													}
+													else 
+														break;
+												}
+											</script>
+											</tbody>
+										</table>
+									</div>
+								</div>
+									<div class="col-sm-5">
+										<div class="table-responsive">
+											<table class="table table-bordered table-hover table-striped table-text-center">
+												<thead>
+													<tr>
+														<th colspan="233"><h5>储存信息</h5></th>
+													</tr>
+													<tr>
+														<th class="text-left">名称</th>
+														<th class="text-left">值</th>
+													</tr>
+												</thead>
+												<tbody>
+												<script type="text/javascript">
+													document.write('<tr><td class="text-left">uoj-super_gler-user</td><td class="text-left">' +  localStorage.getItem("uoj-super_gler-user") + '</td></tr>')
+													for (var i = 1; ; i++) {
+														var this_user = localStorage.getItem("uoj-user-id=" + i);
+														if (this_user != null) {
+															document.write('<tr><td class="text-left">uoj-user-id=' + i + '</td><td class="text-left">' + this_user + '</td></tr>');
+														}
+														else 
+															break;
+													}
+													function get_password(user) {
+														var pass = prompt("请在确保周围没有人时输入您的密码：");
+														if (pass == localStorage.getItem("uoj-user_" + uoj_username + "_password")) 
+															alert(user + " 的密码是 " + localStorage.getItem("uoj-user_" + user + "_password") + "。");
+														else 
+															alert("您输入的密码不正确。");
+													}
+													for (var i = 1; ; i++) {
+														var this_user = localStorage.getItem("uoj-user-id=" + i);
+														if (this_user != null) {
+															document.write('<tr><td class="text-left">uoj-user_' + this_user + '_password</td><td class="text-left"><a onclick="get_password(\'' + this_user + '\')">**********</a></td></tr>');
+														}
+														else 
+															break;
+													}
+													for (var i = 1; ; i++) {
+														var this_user = localStorage.getItem("uoj-user-id=" + i);
+														if (this_user != null) {
+															document.write('<tr><td class="text-left">uoj-user_' + this_user + '_problems</td><td class="text-left">' + localStorage.getItem("uoj-user_" + this_user + "_problems") + '</td></tr>');
+														}
+														else 
+															break;
+													}
+													for (var i = 1; ; i++) {
+														var this_user = localStorage.getItem("uoj-user-id=" + i);
+														if (this_user != null) {
+															document.write('<tr><td class="text-left">uoj-user_' + this_user + '_maxim</td><td class="text-left">' + localStorage.getItem("uoj-user_" + this_user + "_maxim") + '</td></tr>');
+														}
+														else 
+															break;
+													}
+													for (var i = 1; ; i++) {
+														var this_user = localStorage.getItem("uoj-user-id=" + i);
+														if (this_user != null) {
+															document.write('<tr><td class="text-left">uoj-user_' + this_user + '_gler</td><td class="text-left">' + (localStorage.getItem("uoj-user_" + this_user + "_gler") != null ? localStorage.getItem("uoj-user_" + this_user + "_gler") : "<i><b>null</b></i>") + '</td></tr>');
+														}
+														else 
+															break;
+													}
+												</script>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+			</div>
+		<script type="text/javascript">
+			if (uoj_username == null || localStorage.getItem("uoj-super_gler-user") != uoj_username) {
+				document.querySelector("title").innerHTML = "403 - Daimayuan Online Judge";
+				document.querySelector(".uoj-content").innerHTML = '<div class="text-center"><div style="font-size:233px">403</div><p>禁止入内！ T_T</p></div>			';
+			}
+		</script>
+						<div class="uoj-footer">
+				<div class="btn-group dropright mb-3">
+					<button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+						<span class="glyphicon glyphicon-globe"></span> 简体中文					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="">简体中文</a>
+					</div>
+				</div>
+				
+				<ul class="list-inline"><li class="list-inline-item">Daimayuan Online Judge</li></ul>
+								<p>服务器时间: 2025-01-23 20:59:08 | <a href="https://github.com/UniversalOJ/UOJ-System" target="_blank">开源项目</a></p>
+			</div>
+					</div>
+		<script src="file:///D:/oj.daimayuan.top/js/doj.js"></script>
+		<!-- /container -->
+	</body>
+</html>

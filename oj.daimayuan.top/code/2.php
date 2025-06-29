@@ -1,0 +1,318 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<title>比赛 - Daimayuan Online Judge</title>
+		
+		<script type="text/javascript">uojHome = 'http://oj.daimayuan.top'</script>
+
+		<!-- Bootstrap core CSS -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/bootstrap.min.css?v=2019.5.31" />		<!-- Bootstrap Glyphicons CSS-->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/bootstrap-glyphicons.min.css?v=2019.5.31" />
+		<!-- Custom styles for this template -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/uoj-theme.css?v=2.3333" />		
+		<!-- jQuery (necessary for Bootstrap\'s JavaScript plugins) -->
+		<script src="http://oj.daimayuan.top/js/jquery.min.js"></script>		
+		<!-- jQuery autosize -->
+		<script src="http://oj.daimayuan.top/js/jquery.autosize.min.js"></script>		<script type="text/javascript">
+			$(document).ready(function() {
+				$('textarea').autosize();
+			});
+		</script>
+		
+		<!-- jQuery cookie -->
+		<script src="http://oj.daimayuan.top/js/jquery.cookie.min.js"></script>		
+		<!-- jQuery modal -->
+		<script src="http://oj.daimayuan.top/js/jquery.modal.js"></script>		
+				
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="http://oj.daimayuan.top/js/popper.min.js?v=2019.5.31"></script>		<script src="http://oj.daimayuan.top/js/bootstrap.min.js?v=2019.5.31"></script>		
+		<!-- Color converter -->
+		<script src="http://oj.daimayuan.top/js/color-converter.min.js"></script>		
+		<!-- uoj -->
+		<script src="file:///D:/oj.daimayuan.top/js/uoj.js"></script>		
+		<!-- readmore -->
+		<script src="http://oj.daimayuan.top/js/readmore/readmore.min.js"></script>		
+		<!-- LAB -->
+		<script src="http://oj.daimayuan.top/js/LAB.min.js"></script>
+		<!-- favicon -->
+		<link rel="shortcut icon" href="http://oj.daimayuan.top/images/favicon.ico" />
+		
+				
+				
+				<!-- MD5 -->
+		<script src="http://oj.daimayuan.top/js/md5.min.js"></script>				
+				
+				
+				
+				
+		
+				
+				
+				
+				
+				
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<script type="text/javascript">
+		before_window_unload_message = null;
+		$(window).on('beforeunload', function() {
+			if (before_window_unload_message !== null) {
+			    return before_window_unload_message;
+			}
+		});
+		</script>
+		
+			</head>
+	<body role="document">
+		<div class="container theme-showcase" role="main">
+						<div>
+				<ul class="nav nav-pills float-right" role="tablist">
+									<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="uoj_username_a">
+							<span id="uoj_username_page" class="uoj-username" data-rating="1500" data-link="0"></span> 						</a>
+						
+						<ul class="dropdown-menu" role="menu">
+							<li role="presentation"><a class="dropdown-item" id="my_chat">个人信息</a></li>
+							<li role="presentation"><a class="dropdown-item" href="file:///D:/oj.daimayuan.top/user/system-msg.html">系统消息&nbsp;&nbsp;</a></li>
+													</ul>
+					</li>
+					<li id="login" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/login.html">登录</a></li>
+					<li id="register" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/register.html">注册</a></li>
+					<li id="logout" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/logout.html">登出</a></li>
+								</ul><script type="text/javascript">
+							var uoj_username = localStorage.getItem("uoj-username");
+							if (uoj_username != null) {
+								document.querySelector("#uoj_username_page").innerHTML = uoj_username;
+								document.querySelector("#my_chat").href = "file:///D:/oj.daimayuan.top/user/profile/" + uoj_username + ".html";
+								document.querySelector("#login").hidden = true;
+								document.querySelector("#register").hidden = true;
+							}
+							else {
+								document.querySelector("#uoj_username_a").hidden = true;
+								document.querySelector("#logout").hidden = true;
+							}
+						</script>
+				<h1 class="d-none d-sm-block"><a href="file:///D:/oj.daimayuan.top.html"><img src="http://oj.daimayuan.top/images/logo_small.png" alt="Logo" class="img-rounded" style="width:39px; height:39px;" /></a> Daimayuan Online Judge</h1>
+				<h1 class="d-block d-sm-none">Home</h1>
+			</div>
+			
+			<div class="navbar navbar-light navbar-expand-md bg-light mb-4" role="navigation">
+	<a class="navbar-brand" href="../oj.daimayuan.top.html">Home</a>
+	<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="nav navbar-nav mr-auto">
+			<li class="nav-item"><a class="nav-link" href="contests"><span class="glyphicon glyphicon-stats"></span> 比赛</a></li>
+			<li class="nav-item"><a class="nav-link" href="problems"><span class="glyphicon glyphicon-list-alt"></span> 题库</a></li>
+			<li class="nav-item"><a class="nav-link" href="submissions"><span class="glyphicon glyphicon-tasks"></span> 提交记录</a></li>
+			<li class="nav-item"><a class="nav-link" href="courses"><span class="glyphicon glyphicon-education"></span> 课程</a></li>
+		</ul>
+		
+		<form id="form-search-problem" class="form-inline my-2 my-lg-0" method="get">
+			 <div class="input-group">
+				<input type="text" class="form-control" name="search" id="input-search" placeholder=题目搜索 />  
+				<div class="input-group-append">
+					<button type="submit" class="btn btn-search btn-outline-primary" id="submit-search"><span class="glyphicon glyphicon-search"></span></button>
+				</div>
+			</div>
+		</form>
+		<script src="file:///D:/oj.daimayuan.top/js/uoj.js"></script>
+	</div><!--/.nav-collapse -->
+</div>
+			<div class="uoj-content">
+			<h4>正在进行或即将到来的比赛</h4>
+<div class="table-responsive"><table class="table table-bordered table-hover table-striped table-text-center" id="new-contests"><thead><tr><th>比赛名称</th><th style="width:15em;">开始时间</th><th style="width:100px;">时长</th><th style="width:100px;">报名人数</th><th style="width:180px;">评价</th></tr></thead><tbody>
+<tr hidden><td></td><td></td><td></td><td></td><td></td></tr>
+<tr hidden><td></td><td></td><td></td><td></td><td></td></tr>
+<script type="text/javascript" src="file:///D:/oj.daimayuan.top/js/doj.js"></script>
+<script>
+window.zan_cnt = 0;
+var minid = 0;
+for (var i = 10000; i; i--) {
+	var next_contest = localStorage.getItem("lastcontest_id=" + i + "?name");
+	if (next_contest == null) 
+		continue;
+	var bf = Number(localStorage.getItem("lastcontest_id=" + i + "?begin&fast"));
+	var ef = Number(localStorage.getItem("lastcontest_id=" + i + "?end&fast"));
+	if (this_time < bf) 
+		localStorage.setItem("lastcontest_id=" + i + "?type", "unstart");
+	else if (this_time >= bf && this_time <= ef) 
+		localStorage.setItem("lastcontest_id=" + i + "?type", "unend");
+	else if (localStorage.getItem("lastcontest_id=" + i + "?type") == null || localStorage.getItem("lastcontest_id=" + i + "?type") == "unstart" || localStorage.getItem("lastcontest_id=" + i + "?type") == "unend")
+		localStorage.setItem("lastcontest_id=" + i + "?type", "wait");
+	for (var j = 1; ; j++) {
+		var rj = localStorage.getItem("uoj-user-id=" + j);
+		if (rj == null) 
+			break;
+		var rjf = Number(localStorage.getItem("lastcontest_id=" + i + "?" + rj + "&begin&fast"));
+		var rjef = Number(localStorage.getItem("lastcontest_id=" + i + "?" + rj + "&end&fast"));
+		if (localStorage.getItem("lastcontest_id=" + i + "?" + rj + "&begin&fast") == null) {
+			if (this_time < bf) 
+				localStorage.setItem("lastcontest_id=" + i + "?" + rj + "&type", "unstart");
+			else if (this_time >= bf && this_time <= ef) 
+				localStorage.setItem("lastcontest_id=" + i + "?" + rj + "&type", "unend");
+			else if (localStorage.getItem("lastcontest_id=" + i + "?" + rj + "&type") == null || localStorage.getItem("lastcontest_id=" + i + "?" + rj + "&type") == "unstart" || localStorage.getItem("lastcontest_id=" + i + "?" + rj + "&type") == "unend" || localStorage.getItem("lastcontest_id=" + i + "?" + rj + "&type") == "wait")
+				localStorage.setItem("lastcontest_id=" + i + "?" + rj + "&type", localStorage.getItem("lastcontest_id=" + i + "?type"));
+		}
+		else 
+			if (this_time < rjf) 
+				localStorage.setItem("lastcontest_id=" + i + "?" + rj + "&type", "unstart");
+			else if (this_time >= rjf && this_time <= rjef) 
+				localStorage.setItem("lastcontest_id=" + i + "?" + rj + "&type", "unend");
+			else if (localStorage.getItem("lastcontest_id=" + i + "?" + rj + "&type") == null || localStorage.getItem("lastcontest_id=" + i + "?" + rj + "&type") == "unstart" || localStorage.getItem("lastcontest_id=" + i + "?" + rj + "&type") == "unend") 
+				localStorage.setItem("lastcontest_id=" + i + "?" + rj + "&type", "wait");
+	}
+	if (uoj_username != null ? (localStorage.getItem("lastcontest_id=" + i + "?" + uoj_username + "&type") != "end") : (localStorage.getItem("lastcontest_id=" + i + "?type") != "end")) {
+		if (!Number(localStorage.getItem("lastcontest_id=" + i + "?see")) && (localStorage.getItem("uoj-user_" + uoj_username + "_gler") == null || localStorage.getItem("uoj-user_" + uoj_username + "_gler") <= 0) && localStorage.getItem("lastcontest_id=" + i + "?" + uoj_username) == null) 
+			continue;
+		var n = localStorage.getItem("lastcontest_id=" + i + "?name");
+		var b = localStorage.getItem("lastcontest_id=" + i + "?begin");
+		var bf = Number(localStorage.getItem("lastcontest_id=" + i + "?begin&fast"));
+		var ef = Number(localStorage.getItem("lastcontest_id=" + i + "?end&fast"));
+		var l = localStorage.getItem("lastcontest_id=" + i + "?length");
+		var r = localStorage.getItem("lastcontest_id=" + i + "?register");
+		var table = document.getElementById("new-contests");
+		var rows = table.getElementsByTagName("tr");
+		var newRow = table.insertRow(rows.length);
+		var newCell = newRow.insertCell(0);
+		newCell.innerHTML='<div class="uoj-click-zan-block" data-id="'+i+'" data-type="C"></div>';
+		newCell = newRow.insertCell(0);
+		if (localStorage.getItem("uoj-user_" + uoj_username + "_gler") > 0 || Number(localStorage.getItem("lastcontest_id=" + i + "?see")))
+			newCell.innerHTML='<a href="contest/'+i+'/registrants.html"><span class="glyphicon glyphicon-user"></span> &times;'+r+'</a>';
+		else 
+			newCell.innerHTML='<span class="glyphicon glyphicon-user"></span> &times;?';
+		newCell = newRow.insertCell(0);
+		newCell.innerHTML=l+' 小时';
+		newCell = newRow.insertCell(0);
+		newCell.innerHTML=b;
+		newCell = newRow.insertCell(0);
+		newCell.innerHTML='<a href="contest/'+i+'.html">'+n+'</a>';
+		if (localStorage.getItem("uoj-user_" + uoj_username + "_gler") > 0)
+			newCell.innerHTML='<a href="contest/'+i+'.html">'+n+'</a><sup><a href="contest/'+i+'.html" style="color: #805980">Private</a></sup>';
+		if (uoj_username != null && localStorage.getItem("lastcontest_id=" + i + "?" + uoj_username + "&type") == "unstart") {
+			if (localStorage.getItem("lastcontest_id=" + i + "?" + uoj_username) == null)
+				newCell.innerHTML+='<sup><a style="color:red" href="contest/'+i+'/register.html">报名</a></sup>';
+			else 
+				newCell.innerHTML+='<sup><span style="color:green">已报名</span></sup>';
+		}
+		else if (uoj_username != null && localStorage.getItem("lastcontest_id=" + i + "?" + uoj_username + "&type") == "unend") {
+			if (localStorage.getItem("lastcontest_id=" + i + "?" + uoj_username) == null)
+				newCell.innerHTML+='<sup><a style="color:red" href="contest/'+i+'/register.html">报名</a></sup>';
+			else 
+				newCell.innerHTML+='<sup><a style="color:blue" href="contest/'+i+'.html">正在进行</a></sup>';
+		}
+		else if (uoj_username != null && localStorage.getItem("lastcontest_id=" + i + "?" + uoj_username + "&type") == "wait") 
+			newCell.innerHTML+='<sup><a style="color:blue" href="contest/'+i+'.html">等待评测</a></sup>';
+		else if (uoj_username != null && localStorage.getItem("lastcontest_id=" + i + "?" + uoj_username + "&type") == "judging") 
+			newCell.innerHTML+='<sup><a style="color:blue" href="contest/'+i+'.html">正在测评</a></sup>';
+		else if (uoj_username != null && localStorage.getItem("lastcontest_id=" + i + "?type") == "unstart") {
+			if (localStorage.getItem("lastcontest_id=" + i + "?" + uoj_username) == null)
+				newCell.innerHTML+='<sup><a style="color:red" href="contest/'+i+'/register.html">报名</a></sup>';
+			else 
+				newCell.innerHTML+='<sup><span style="color:green">已报名</span></sup>';
+		}
+		else if (localStorage.getItem("lastcontest_id=" + i + "?type") == "unend") {
+			if (uoj_username != null && localStorage.getItem("lastcontest_id=" + i + "?" + uoj_username) == null)
+				newCell.innerHTML+='<sup><a style="color:red" href="contest/'+i+'/register.html">报名</a></sup>';
+			else 
+				newCell.innerHTML+='<sup><a style="color:blue" href="contest/'+i+'.html">正在进行</a></sup>';
+		}
+		else if (localStorage.getItem("lastcontest_id=" + i + "?type") == "wait") 
+			newCell.innerHTML+='<sup><a style="color:blue" href="contest/'+i+'.html">等待评测</a></sup>';
+		else if (localStorage.getItem("lastcontest_id=" + i + "?type") == "judging") 
+			newCell.innerHTML+='<sup><a style="color:blue" href="contest/'+i+'.html">正在测评</a></sup>';
+
+		zan_cnt++;
+		if (uoj_username != null ? (localStorage.getItem("lastcontest_id=" + i + "?" + uoj_username + "&type") == "unstart") : (localStorage.getItem("lastcontest_id=" + i + "?type") == "unstart"))
+			minid = i;
+	}
+}
+</script>
+</tbody></table></div>
+<script type="text/javascript">
+if (minid && uoj_username != null ? (localStorage.getItem("lastcontest_id=" + minid + "?" + uoj_username + "&type") == "unstart") : (localStorage.getItem("lastcontest_id=" + minid + "?type") == "unstart")) {
+	var n = localStorage.getItem("lastcontest_id=" + minid + "?name");
+	var b = localStorage.getItem("lastcontest_id=" + minid + "?begin");
+	document.write('<div class="text-center bot-buffer-lg"><div class="text-warning">' + n + ' 倒计时</div><div id="contest-countdown"><span style="font-size:30px"><span></span>:<span></span>:<span></span></span></div></div>');
+	$('#contest-countdown').countdown(((+new Date(b)) - (+new Date())) / 1000, function() { });
+}
+</script>
+<script type="text/javascript">
+	if (localStorage.getItem("uoj-user_" + uoj_username + "_gler") != null) {
+		// document.write('<div style="width: 100px; display: inline-block;"><a href="contest/manage.html" class="btn btn-info btn-block">管理</a></div>');
+		document.write('<div style="width: 100px; display: inline-block;"><a href="contest/add_contest.html" class="btn btn-primary btn-block">新建比赛</a></div>');
+	}
+	if (localStorage.getItem("uoj-super_gler-user") == uoj_username) {
+		document.write('<div style="width: 100px; display: inline-block;"><a href="contest/del_contest.html" class="btn btn-danger btn-block">删除比赛</a></div>');
+	}
+</script>
+
+
+<h4>已结束的比赛</h4>
+<div class="table-responsive"><table class="table table-bordered table-hover table-striped table-text-center" id="old-contests"><thead><tr><th>比赛名称</th><th style="width:15em;">开始时间</th><th style="width:100px;">时长</th><th style="width:100px;">报名人数</th><th style="width:180px;">评价</th></tr></thead><tbody>
+<tr hidden><td></td><td></td><td></td><td></td><td></td></tr>
+<tr hidden><td></td><td></td><td></td><td></td><td></td></tr>
+<script type="text/javascript">
+for (var i = 10000; i; i--) {
+	var next_contest = localStorage.getItem("lastcontest_id=" + i + "?name");
+	if (next_contest == null) 
+		continue;
+	if (uoj_username != null ? (localStorage.getItem("lastcontest_id=" + i + "?" + uoj_username + "&type") == "end") : (localStorage.getItem("lastcontest_id=" + i + "?type") == "end")) {
+		if (!Number(localStorage.getItem("lastcontest_id=" + i + "?see")) && (localStorage.getItem("uoj-user_" + uoj_username + "_gler") == null || localStorage.getItem("uoj-user_" + uoj_username + "_gler") <= 0) && localStorage.getItem("lastcontest_id=" + i + "?" + uoj_username) == null) 
+			continue;
+		var n = localStorage.getItem("lastcontest_id=" + i + "?name");
+		var b = localStorage.getItem("lastcontest_id=" + i + "?begin");
+		var l = localStorage.getItem("lastcontest_id=" + i + "?length");
+		var r = localStorage.getItem("lastcontest_id=" + i + "?register");
+		var table = document.getElementById("old-contests");
+		var rows = table.getElementsByTagName("tr");
+		var newRow = table.insertRow(rows.length);
+		var newCell = newRow.insertCell(0);
+		newCell.innerHTML='<div class="uoj-click-zan-block" data-id="'+i+'" data-type="C"></div>';
+		newCell = newRow.insertCell(0);
+		if (localStorage.getItem("uoj-user_" + uoj_username + "_gler") > 0 || Number(localStorage.getItem("lastcontest_id=" + i + "?see")))
+			newCell.innerHTML='<a href="contest/'+i+'/registrants.html"><span class="glyphicon glyphicon-user"></span> &times;'+r+'</a>';
+		else 
+			newCell.innerHTML='<span class="glyphicon glyphicon-user"></span> &times;?';
+		newCell = newRow.insertCell(0);
+		newCell.innerHTML=l+' 小时';
+		newCell = newRow.insertCell(0);
+		newCell.innerHTML=b;
+		newCell = newRow.insertCell(0);
+		newCell.innerHTML='<a href="contest/'+i+'.html">'+n+'</a>';
+		if (localStorage.getItem("uoj-user_" + uoj_username + "_gler") > 0)
+			newCell.innerHTML+='<sup><a href="contest/'+i+'.html" style="color: #805980">Private</a></sup>';
+		newCell.innerHTML+='<sup><a href="contest/'+i+'/standings.html" style="color:grey">已结束</a></sup>';
+		zan_cnt++;
+	}
+}
+</script>
+</tbody></table></div>			</div>
+
+						<div class="uoj-footer">
+				<div class="btn-group dropright mb-3">
+					<button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+						<span class="glyphicon glyphicon-globe"></span> 简体中文					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="">简体中文</a>
+					</div>
+				</div>
+				
+				<ul class="list-inline"><li class="list-inline-item">Daimayuan Online Judge</li></ul>
+								<p>服务器时间: 2025-01-23 20:59:08 | <a href="https://github.com/UniversalOJ/UOJ-System" target="_blank">开源项目</a></p>
+			</div>
+					</div>
+		<script src="file:///D:/oj.daimayuan.top/js/doj.js"></script>
+		<!-- /container -->
+	</body>
+</html>

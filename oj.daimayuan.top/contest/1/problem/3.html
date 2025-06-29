@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<title id="problem-name"></title>
+		
+		<script type="text/javascript">
+		window.this_id = 3;
+		window.cont_id = 1;
+		window.pro_id = 0;
+		for (var i = 0; i <= 10000; i++) 
+			if (localStorage.getItem("lastcontest_id=" + cont_id + "?" + i + "&id") == this_id) {
+				pro_id = i;
+				break;
+			}
+		uojHome = 'http://oj.daimayuan.top';
+		</script>
+
+		<!-- Bootstrap core CSS -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/bootstrap.min.css?v=2019.5.31" />		<!-- Bootstrap Glyphicons CSS-->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/bootstrap-glyphicons.min.css?v=2019.5.31" />
+		<!-- Custom styles for this template -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/uoj-theme.css?v=2.3333" />		
+		<!-- jQuery (necessary for Bootstrap\'s JavaScript plugins) -->
+		<script src="http://oj.daimayuan.top/js/jquery.min.js"></script>		
+		<!-- jQuery autosize -->
+		<script src="http://oj.daimayuan.top/js/jquery.autosize.min.js"></script>		<script type="text/javascript">
+			$(document).ready(function() {
+				$('textarea').autosize();
+			});
+		</script>
+		
+		<!-- jQuery cookie -->
+		<script src="http://oj.daimayuan.top/js/jquery.cookie.min.js"></script>		
+		<!-- jQuery modal -->
+		<script src="http://oj.daimayuan.top/js/jquery.modal.js"></script>		
+				
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="http://oj.daimayuan.top/js/popper.min.js?v=2019.5.31"></script>		<script src="http://oj.daimayuan.top/js/bootstrap.min.js?v=2019.5.31"></script>		
+		<!-- Color converter -->
+		<script src="http://oj.daimayuan.top/js/color-converter.min.js"></script>		
+		<!-- uoj -->
+		<script src="file:///D:/oj.daimayuan.top/js/uoj.js"></script>		
+		<!-- readmore -->
+		<script src="http://oj.daimayuan.top/js/readmore/readmore.min.js"></script>		
+		<!-- LAB -->
+		<script src="http://oj.daimayuan.top/js/LAB.min.js"></script>
+		<!-- favicon -->
+		<link rel="shortcut icon" href="http://oj.daimayuan.top/images/favicon.ico" />
+		
+				<!-- MathJax -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$']], displayMath: [['$$','$$']]}
+    });
+    MathJax.Hub.Register.StartupHook("End", function () {
+        Codeforces.runMathJaxListeners();
+    });
+    </script>
+    <script type="text/javascript" async
+            src="https://codeforces.com/mathjax.codeforces.org/MathJax.js?config=TeX-AMS_HTML-full"
+    >
+    </script>
+				
+				<!-- MD5 -->
+		<script src="http://oj.daimayuan.top/js/md5.min.js"></script>				
+				
+				
+				
+				
+		
+				
+				
+				
+				
+				
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<script type="text/javascript">
+		before_window_unload_message = null;
+		$(window).on('beforeunload', function() {
+			if (before_window_unload_message !== null) {
+				return before_window_unload_message;
+			}
+		});
+		</script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+
+		<!-- shjs -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/sh_typical.min.css" />		<script src="http://oj.daimayuan.top/js/sh_main.min.js"></script>		<script type="text/javascript">$(document).ready(function(){sh_highlightDocument()})</script>
+				
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<script type="text/javascript">
+		before_window_unload_message = null;
+		$(window).on('beforeunload', function() {
+			if (before_window_unload_message !== null) {
+			    return before_window_unload_message;
+			}
+		});
+		</script>
+			</head>
+	<body role="document">
+		<div class="container theme-showcase" role="main">
+						<div>
+				<ul class="nav nav-pills float-right" role="tablist">
+									<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="uoj_username_a">
+							<span id="uoj_username_page" class="uoj-username" data-rating="1500" data-link="0"></span> 						</a>
+						
+						<ul class="dropdown-menu" role="menu">
+							<li role="presentation"><a class="dropdown-item" id="my_chat">个人信息</a></li>
+							<li role="presentation"><a class="dropdown-item" href="file:///D:/oj.daimayuan.top/user/system-msg.html">系统消息&nbsp;&nbsp;</a></li>
+													</ul>
+					</li>
+					<li id="login" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/login.html">登录</a></li>
+					<li id="register" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/register.html">注册</a></li>
+					<li id="logout" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/logout.html">登出</a></li>
+								</ul><script type="text/javascript">
+							var uoj_username = localStorage.getItem("uoj-username");
+							if (uoj_username != null) {
+								document.querySelector("#uoj_username_page").innerHTML = uoj_username;
+								document.querySelector("#my_chat").href = "file:///D:/oj.daimayuan.top/user/profile/" + uoj_username + ".html";
+								document.querySelector("#login").hidden = true;
+								document.querySelector("#register").hidden = true;
+							}
+							else {
+								document.querySelector("#uoj_username_a").hidden = true;
+								document.querySelector("#logout").hidden = true;
+							}
+						</script>
+				<h1 class="d-none d-sm-block"><a href="../oj.daimayuan.top.html"><img src="http://oj.daimayuan.top/images/logo_small.png" alt="Logo" class="img-rounded" style="width:39px; height:39px;" /></a> Daimayuan Online Judge</h1>
+				<h1 class="d-block d-sm-none">Home</h1>
+			</div>
+			
+			<div class="navbar navbar-light navbar-expand-md bg-light mb-4" role="navigation">
+	<a class="navbar-brand" href="../oj.daimayuan.top.html">Home</a>
+	<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="nav navbar-nav mr-auto">
+			<li class="nav-item"><a class="nav-link" href="contests"><span class="glyphicon glyphicon-stats"></span> 比赛</a></li>
+			<li class="nav-item"><a class="nav-link" href="problems"><span class="glyphicon glyphicon-list-alt"></span> 题库</a></li>
+			<li class="nav-item"><a class="nav-link" href="submissions"><span class="glyphicon glyphicon-tasks"></span> 提交记录</a></li>
+			<li class="nav-item"><a class="nav-link" href="courses"><span class="glyphicon glyphicon-education"></span> 课程</a></li>
+		</ul>
+		
+		<form id="form-search-problem" class="form-inline my-2 my-lg-0" method="get">
+			 <div class="input-group">
+				<input type="text" class="form-control" name="search" id="input-search" placeholder=题目搜索 />  
+				<div class="input-group-append">
+					<button type="submit" class="btn btn-search btn-outline-primary" id="submit-search"><span class="glyphicon glyphicon-search"></span></button>
+				</div>
+			</div>
+		</form>
+		<script src="file:///D:/oj.daimayuan.top/js/uoj.js"></script>
+	</div><!--/.nav-collapse -->
+</div>
+<script type="text/javascript">
+	var zan_link = '';
+	$('#form-search-problem').submit(function(e) {
+		e.preventDefault();
+		
+		url = 'http://oj.daimayuan.top/problems';
+		qs = [];
+		$(['search']).each(function () {
+			if ($('#input-' + this).val()) {
+				qs.push(this + '=' + encodeURIComponent($('#input-' + this).val()));
+			}
+		});
+		if (qs.length > 0) {
+			url += '?' + qs.join('&');
+		}
+		location.href = url;
+	});
+</script>
+			<div class="uoj-content">	
+<div class="row d-flex justify-content-center">
+	<span class="badge badge-secondary mr-1" id="time_limit"></span>
+	<span class="badge badge-secondary mr-1" id="memory_limit"></span>
+</div>
+<div class="float-right">
+	<script type="text/javascript">
+		window.zan_cnt = 1;
+		document.write('<div class="uoj-click-zan-block" data-id="' + this_id + '" data-type="P"></div>');
+	</script>
+</div>
+
+<div class="page-header row">
+<h1 class="col-md-3 text-left"><small id="contest-left">【29】代码源月赛 202502</small></h1>
+<h1 class="col-md-7 text-center" id="proname"> </h1>
+<div class="col-md-2 text-right" id="contest-countdown"></div>
+<script type="text/javascript">
+if ((uoj_username != null ? (localStorage.getItem("lastcontest_id=" + cont_id + "?" + uoj_username + "&type") == "unend") : (localStorage.getItem("lastcontest_id=" + cont_id + "?type") == "unend")) || (uoj_username != null ? (localStorage.getItem("lastcontest_id=" + cont_id + "?" + uoj_username + "&type") == "unstart") : (localStorage.getItem("lastcontest_id=" + cont_id + "?type") == "unstart"))) {
+	var b = localStorage.getItem("lastcontest_id=" + cont_id + "?end");
+	$('#contest-countdown').countdown(((+new Date(b)) - (+new Date())) / 1000, function() { });
+}
+var n = localStorage.getItem("lastcontest_id=" + cont_id + "?name");
+document.querySelector("#contest-left").innerHTML = n;
+</script>
+</div>
+<a role="button" class="btn btn-info float-right" href="download.php?type=problem"><span class="glyphicon glyphicon-file"></span> 附加文件</a>
+<a role="button" class="btn btn-info float-right" href="statistics.html"><span class="glyphicon glyphicon-stats"></span> 统计</a>
+
+<ul class="nav nav-tabs" role="tablist">
+	<li class="nav-item"><a class="nav-link active" href="#tab-statement" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-book"></span> 描述</a></li>
+	<li class="nav-item"><a class="nav-link" href="#tab-submit-answer" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-upload"></span> 提交</a></li>
+		<li class="nav-item"><a class="nav-link" href="#tab-custom-test" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-console"></span> 自定义测试</a></li>
+		<li class="nav-item"><a class="nav-link contest">返回比赛</a></li>
+		<script type="text/javascript">
+			if (localStorage.getItem("uoj-user_" + uoj_username + "_gler") > 0) 
+				document.write('<li class="nav-item"><a class="nav-link" href="#tab-manage" role="tab" data-toggle="tab">管理</a></li>');
+		</script>
+			</ul>
+<div class="tab-content">
+	<div class="tab-pane active" id="tab-statement">
+		<article class="top-buffer-md"></article>
+		<script type="text/javascript">
+			document.querySelector(".top-buffer-md").innerHTML = marked.parse(localStorage.getItem("problem-id=" + this_id + "?problem_text"));
+		</script>
+	</div>
+	<div class="tab-pane" id="tab-submit-answer">
+		<div class="top-buffer-sm"></div>
+				<form method="post" class="form-horizontal" id="form-answer" enctype="multipart/form-data"><input type="hidden" name="_token" value="0ZyPmPAliGoCSY6nUCji40RoYLvrFxCjHEnOz0JnbmBW3QPJtsjec7KLv8fg" /><div class="form-group" id="form-group-answer_answer"></div>
+<script type="text/javascript">
+$('#form-group-answer_answer').source_code_form_group('answer_answer', '源文件:answer', "<option>C<\/option><option>C++14<\/option><option selected=\"selected\">C++17<\/option><option>Java8<\/option><option>Java11<\/option><option>Pascal<\/option><option>Python2<\/option><option>Python3<\/option>");
+</script><div class="text-center"><a type="submit" id="button-submit-answer" name="submit-answer" value="answer" class="mt-2 btn btn-secondary" onclick="submit('answer_answer');" href="../submissions.html">提交</a></div></form>
+	</div>
+		<div class="tab-pane" id="tab-custom-test">
+		<div class="top-buffer-sm"></div>
+		<form method="post" class="form-horizontal" id="form-custom_test" enctype="multipart/form-data"><input type="hidden" name="_token" value="0ZyPmPAliGoCSY6nUCji40RoYLvrFxCjHEnOz0JnbmBW3QPJtsjec7KLv8fg" /><div class="form-group" id="form-group-custom_test_answer"></div>
+<script type="text/javascript">
+$('#form-group-custom_test_answer').source_code_form_group('custom_test_answer', '源文件:answer', "<option>C<\/option><option>C++14<\/option><option selected=\"selected\">C++17<\/option><option>Java8<\/option><option>Java11<\/option><option>Pascal<\/option><option>Python2<\/option><option>Python3<\/option>");
+</script><div class="form-group" id="form-group-custom_test_input"></div>
+<script type="text/javascript">
+$('#form-group-custom_test_input').text_file_form_group('custom_test_input', '文本文件:input.txt');
+</script><div id="div-custom_test_result"></div><div class="text-center"><button type="submit" value="custom_test" class="mt-2 btn btn-secondary" onclick="alert('暂不开放');">运行</button></div></form></div>
+<div class="tab-pane" id="tab-manage">
+	<div id="div-contestname" class="form-group" style="margin-top: .7rem;">
+		<h4 for="input-contestname" class="col-sm-2 control-label"><label>基本</label></h4>
+		<h5 for="input-contestname" class="col-sm-2 control-label"><label>题目名称（比赛内）</label></h5>
+		<div class="col-sm-12" style="margin-top: -.5rem;">
+			<input type="text" class="form-control" id="input-contestname" name="contestname" placeholder="输入题目名称" maxlength="20" />
+			<span class="help-block" style="color: black;">如果不想修改题目名称请留空</span>
+		</div>
+	</div>
+	<div id="div-contestname" class="form-group">
+		<h5 for="input-contestname" class="col-sm-2 control-label"><label>时空限制</label></h5>
+		<div id="div-custom_test_problem_editor" class="col-sm-12" style="margin-top: -.5rem;">
+		<div class="row">
+			<div class="col-sm-6"><span style="color: black;">时间限制(s):</span><input type="Number" min="-1" max="100" class="form-control" id="input-problem_time" style="overflow: hidden; overflow-wrap: break-word; resize: none;" placeholder="N/A"/></div>
+			<div class="col-sm-6"><span style="color: black;">空间限制(MB):</span><input type="Number" min="-1" max="1024" class="form-control" id="input-problem_memory" style="overflow: hidden; overflow-wrap: break-word; resize: none;" placeholder="N/A"/></div>
+		</div>
+		<span class="help-block" style="color: black;">值为 $-1$ 表示 <code>N/A</code></span>
+		</div>
+	</div>
+
+	<div id="div-contestname" class="form-group">
+		<h5 for="input-contestname" class="col-sm-2 control-label"><label>题面</label></h5>
+		<div id="div-custom_test_problem_editor" class="col-sm-12" style="margin-top: -.5rem;"><textarea class="form-control" id="input-custom_test_problem_editor" name="custom_test_problem_editor" style="overflow: hidden; overflow-wrap: break-word; resize: none;">### 题目背景
+
+&lt;!--     --&gt;
+
+### 题目描述
+
+&lt;!--     --&gt;
+
+### 输入格式
+
+&lt;!--     --&gt;
+
+### 输出格式
+
+&lt;!--     --&gt;
+
+### 样例输入1
+```
+<!--     -->
+```
+### 样例输出1
+```
+<!--     -->
+```
+
+### 样例输入2
+```
+<!--     -->
+```
+### 样例输出2
+```
+<!--     -->
+```
+
+### 数据范围与约定
+
+- 对于 $x\\%$ 的数据，保证 …… 。
+
+- 对于 $y\\%$ 的数据，保证 …… 。
+
+- 对于另外 $z\\%$ 的数据，保证 …… 。
+
+- 对于 $100\\%$ 的数据，保证 …… 。</textarea><span class="help-block" style="color: black;">支持 Markdown 与 HTML<br/><strong>注意：代码请不要写<pre>```xxx
+…
+```</pre>需要写（C++ 需要写 cpp）<pre>&lt;pre&gt;&lt;code class="sh_xxx"&gt;…
+…
+&lt;/code&gt;&lt;/pre&gt;</pre>代码块内 <code><</code> 请写为 <code>&lt;j&gt;<&lt;/j&gt;</code></strong></span></div>
+	</div>
+	<div class="text-center"><button type="submit" class="mt-2 btn btn-secondary" onclick="change_problem();">提交</button></div>
+	<script type="text/javascript">
+		if (localStorage.getItem("problem-id=" + this_id + "?problem_text") != "" && localStorage.getItem("problem-id=" + this_id + "?problem_text") != null) 
+			document.getElementById("input-custom_test_problem_editor").innerHTML = localStorage.getItem("problem-id=" + this_id + "?problem_text");
+		function change_problem() {
+			var input = document.getElementById("input-contestname");
+			var input_text = input.value;
+			if (input_text != "") 
+				localStorage.setItem("lastcontest_id=" + cont_id + "?" + pro_id + "&name", input_text);
+			input = document.getElementById("input-problem_time");
+			input_text = input.value;
+			if (input_text == -1) input_text = "N/A";
+			if (input_text != 0) 
+				localStorage.setItem("problem-id=" + this_id + "?time", input_text + " s");
+			input = document.getElementById("input-problem_memory");
+			input_text = input.value;
+			if (input_text == -1) input_text = "N/A";
+			if (input_text != 0) 
+				localStorage.setItem("problem-id=" + this_id + "?memory", input_text + " MB");
+			var textarea = document.getElementById("input-custom_test_problem_editor");
+			var text = textarea.value;
+			if (text != "" && text != localStorage.getItem("problem-id=" + this_id + "?problem_text")) 
+				localStorage.setItem("problem-id=" + this_id + "?problem_text", text);
+			alert("修改完成！");
+			location.href="";
+		}
+	</script>
+
+	<div id="div-contestname" class="form-group col-sm-12">
+		<hr/>
+		<h4 for="input-contestname" class="control-label"><label>测试点</label></h4>
+		<div id="div-custom_test_problem_editor" class="col-sm-12" style="margin-top: -.5rem;">
+		<div class="row">
+			<div class="col-sm-6"><span style="color: black;">Input 1:</span><textarea class="form-control" id="input-custom_test_num_editor1" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+			<div class="col-sm-6"><span style="color: black;">Output 1:</span><textarea class="form-control" id="output-custom_test_num_editor1" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6"><span style="color: black;">Input 2:</span><textarea class="form-control" id="input-custom_test_num_editor2" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+			<div class="col-sm-6"><span style="color: black;">Output 2:</span><textarea class="form-control" id="output-custom_test_num_editor2" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6"><span style="color: black;">Input 3:</span><textarea class="form-control" id="input-custom_test_num_editor3" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+			<div class="col-sm-6"><span style="color: black;">Output 3:</span><textarea class="form-control" id="output-custom_test_num_editor3" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6"><span style="color: black;">Input 4:</span><textarea class="form-control" id="input-custom_test_num_editor4" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+			<div class="col-sm-6"><span style="color: black;">Output 4:</span><textarea class="form-control" id="output-custom_test_num_editor4" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6"><span style="color: black;">Input 5:</span><textarea class="form-control" id="input-custom_test_num_editor5" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+			<div class="col-sm-6"><span style="color: black;">Output 5:</span><textarea class="form-control" id="output-custom_test_num_editor5" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6"><span style="color: black;">Input 6:</span><textarea class="form-control" id="input-custom_test_num_editor6" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+			<div class="col-sm-6"><span style="color: black;">Output 6:</span><textarea class="form-control" id="output-custom_test_num_editor6" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6"><span style="color: black;">Input 7:</span><textarea class="form-control" id="input-custom_test_num_editor7" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+			<div class="col-sm-6"><span style="color: black;">Output 7:</span><textarea class="form-control" id="output-custom_test_num_editor7" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6"><span style="color: black;">Input 8:</span><textarea class="form-control" id="input-custom_test_num_editor8" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+			<div class="col-sm-6"><span style="color: black;">Output 8:</span><textarea class="form-control" id="output-custom_test_num_editor8" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6"><span style="color: black;">Input 9:</span><textarea class="form-control" id="input-custom_test_num_editor9" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+			<div class="col-sm-6"><span style="color: black;">Output 9:</span><textarea class="form-control" id="output-custom_test_num_editor9" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6"><span style="color: black;">Input 10:</span><textarea class="form-control" id="input-custom_test_num_editor10" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+			<div class="col-sm-6"><span style="color: black;">Output 10:</span><textarea class="form-control" id="output-custom_test_num_editor10" style="overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+		</div>
+		<span class="help-block" style="color: black;">请在前 $x$ 组输入数据</span>
+	</div>
+	</div>
+	<div class="text-center"><button type="submit" value="custom_test" class="mt-2 btn btn-secondary" onclick="change_num();">提交</button></div>
+
+	<div id="div-contestname" class="form-group col-sm-12">
+		<hr/>
+		<h4 for="input-contestname" class="control-label"><label>可见度</label></h4>
+		<div class="row">
+		<div id="div-contesttime" class="form-group col-sm-6">
+			<h6 for="input-contestmine" class="control-label"><label>代码可见度</label></h6>
+			<div>
+				<input type="radio" id="input-contestmine" name="contestmine" value="永远可见"/><label class="help-block" id="help-contestmine" style="margin-left: 5px;">永远可见</label><br/><input type="radio" id="input-contestnotmine" name="contestmine" value="取得某分数可见小于等于该分数的代码" /><label class="help-block" id="help-contestmine" style="margin-left: 5px;">取得某分数可见小于等于该分数的代码</label><br/><input type="radio" id="input-contestnotmine" name="contestmine" value="AC 后可见" /><label class="help-block" id="help-contestmine" style="margin-left: 5px;">AC 后可见</label><br/><input type="radio" id="input-contestnotmine" name="contestmine" value="不可见" /><label class="help-block" id="help-contestmine" style="margin-left: 5px;">不可见</label>
+			</div>
+		</div>
+		<div id="div-contesttime" class="form-group col-sm-6">
+			<h6 for="input-contestnum" class="control-label"><label>测试点可见度</label></h6>
+			<div>
+				<input type="radio" id="input-contestnum" name="contestnum" value="永远可见"/><label class="help-block" id="help-contestnum" style="margin-left: 5px;">永远可见</label><br/><input type="radio" id="input-contestnotnum" name="contestnum" value="只可见对应状态的测试点数" /><label class="help-block" id="help-contestnum" style="margin-left: 5px;">只可见对应状态的测试点数</label><br/><input type="radio" id="input-contestnotnum" name="contestnum" value="只可见 AC 的测试点" /><label class="help-block" id="help-contestnum" style="margin-left: 5px;">只可见 AC 的测试点</label><br/><input type="radio" id="input-contestnotnum" name="contestnum" value="不可见" /><label class="help-block" id="help-contestnum" style="margin-left: 5px;">不可见</label>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="text-center"><button type="submit" value="custom_test" class="mt-2 btn btn-secondary" onclick="change_see();">提交</button></div>
+	<script type="text/javascript">
+function change_see() {
+	var lastcontest_id = this_id;
+	var radio = document.getElementsByName("contestmine");
+	var ok1 = 0;
+	for (var i=0; i<radio.length; i++) 
+		if (radio[i].checked) 
+			ok1 = radio[i].value;
+	if (ok1) {
+	if (ok1 == "永远可见") 
+		localStorage.setItem("problem-id=" + lastcontest_id + "?code", 3);
+	else if (ok1 == "取得某分数可见小于等于该分数的代码")
+		localStorage.setItem("problem-id=" + lastcontest_id + "?code", 2);
+	else if (ok1 == "AC 后可见") 
+		localStorage.setItem("problem-id=" + lastcontest_id + "?code", 1);
+	else 
+		localStorage.setItem("problem-id=" + lastcontest_id + "?code", 0);
+	}
+	radio = document.getElementsByName("contestnum");
+	var ok2 = 0;
+	for (var i=0; i<radio.length; i++) 
+		if (radio[i].checked) 
+			ok2 = radio[i].value;
+	if (ok2) {
+	if (ok2 == "永远可见") 
+		localStorage.setItem("problem-id=" + lastcontest_id + "?num", 3);
+	else if (ok2 == "只可见对应状态的测试点数")
+		localStorage.setItem("problem-id=" + lastcontest_id + "?num", 2);
+	else if (ok2 == "只可见 AC 的测试点") 
+		localStorage.setItem("problem-id=" + lastcontest_id + "?num", 1);
+	else 
+		localStorage.setItem("problem-id=" + lastcontest_id + "?num", 0);
+	}
+	alert("修改完成！");
+	location.href="";
+}
+	</script>
+</div>
+	</div>
+			</div>
+		<script src="file:///D:/oj.daimayuan.top/js/contest_problem.js"></script>
+						<div class="uoj-footer">
+				<div class="btn-group dropright mb-3">
+					<button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+						<span class="glyphicon glyphicon-globe"></span> 简体中文					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="">简体中文</a>
+					</div>
+				</div>
+				
+				<ul class="list-inline"><li class="list-inline-item">Daimayuan Online Judge</li></ul>
+								<p>服务器时间: 2025-01-23 20:59:08 | <a href="https://github.com/UniversalOJ/UOJ-System" target="_blank">开源项目</a></p>
+			</div>
+					</div>
+		<script src="file:///D:/oj.daimayuan.top/js/doj.js"></script>
+		<!-- /container -->
+	</body>
+</html>

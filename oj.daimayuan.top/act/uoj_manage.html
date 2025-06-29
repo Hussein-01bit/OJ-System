@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<title>志愿者管理员活动 - Daimayuan Online Judge</title>
+		
+		<script type="text/javascript">uojHome = 'http://oj.daimayuan.top'</script>
+
+		<!-- Bootstrap core CSS -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/bootstrap.min.css?v=2019.5.31" />		<!-- Bootstrap Glyphicons CSS-->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/bootstrap-glyphicons.min.css?v=2019.5.31" />
+		<!-- Custom styles for this template -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/uoj-theme.css?v=2.3333" />		
+		<!-- jQuery (necessary for Bootstrap\'s JavaScript plugins) -->
+		<script src="http://oj.daimayuan.top/js/jquery.min.js"></script>		
+		<!-- jQuery autosize -->
+		<script src="http://oj.daimayuan.top/js/jquery.autosize.min.js"></script>		<script type="text/javascript">
+			$(document).ready(function() {
+				$('textarea').autosize();
+			});
+		</script>
+		
+		<!-- jQuery cookie -->
+		<script src="http://oj.daimayuan.top/js/jquery.cookie.min.js"></script>		
+		<!-- jQuery modal -->
+		<script src="http://oj.daimayuan.top/js/jquery.modal.js"></script>		
+				
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="http://oj.daimayuan.top/js/popper.min.js?v=2019.5.31"></script>		<script src="http://oj.daimayuan.top/js/bootstrap.min.js?v=2019.5.31"></script>		
+		<!-- Color converter -->
+		<script src="http://oj.daimayuan.top/js/color-converter.min.js"></script>		
+		<!-- uoj -->
+		<script src="file:///D:/oj.daimayuan.top/js/uoj.js"></script>	
+		<!-- readmore -->
+		<script src="http://oj.daimayuan.top/js/readmore/readmore.min.js"></script>		
+		<!-- LAB -->
+		<script src="http://oj.daimayuan.top/js/LAB.min.js"></script>
+		<!-- favicon -->
+		<link rel="shortcut icon" href="http://oj.daimayuan.top/images/favicon.ico" />
+		
+				
+				
+				<!-- MD5 -->
+		<script src="http://oj.daimayuan.top/js/md5.min.js"></script>				
+				
+				
+				<!-- MathJax -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$']], displayMath: [['$$','$$']]}
+    });
+    MathJax.Hub.Register.StartupHook("End", function () {
+        Codeforces.runMathJaxListeners();
+    });
+    </script>
+    <script type="text/javascript" async
+            src="https://codeforces.com/mathjax.codeforces.org/MathJax.js?config=TeX-AMS_HTML-full"
+    >
+    </script>
+				
+		
+				
+				<!-- shjs -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/sh_typical.min.css" />		<script src="http://oj.daimayuan.top/js/sh_main.min.js"></script>		<script type="text/javascript">$(document).ready(function(){sh_highlightDocument()})</script>
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<script type="text/javascript">
+		before_window_unload_message = null;
+		$(window).on('beforeunload', function() {
+			if (before_window_unload_message !== null) {
+			    return before_window_unload_message;
+			}
+		});
+		</script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+		
+			</head>
+	<body role="document">
+		<div class="container theme-showcase" role="main">
+						<div>
+				<ul class="nav nav-pills float-right" role="tablist">
+									<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="uoj_username_a">
+							<span id="uoj_username_page" class="uoj-username" data-rating="1500" data-link="0"></span> 						</a>
+						
+						<ul class="dropdown-menu" role="menu">
+							<li role="presentation"><a class="dropdown-item" id="my_chat">个人信息</a></li>
+							<li role="presentation"><a class="dropdown-item" href="file:///D:/oj.daimayuan.top/user/system-msg.html">系统消息&nbsp;&nbsp;</a></li>
+													</ul>
+					</li>
+					<li id="login" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/login.html">登录</a></li>
+					<li id="register" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/register.html">注册</a></li>
+					<li id="logout" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/logout.html">登出</a></li>
+								</ul><script type="text/javascript">
+							var uoj_username = localStorage.getItem("uoj-username");
+							if (uoj_username != null) {
+								document.querySelector("#uoj_username_page").innerHTML = uoj_username;
+								document.querySelector("#my_chat").href = "file:///D:/oj.daimayuan.top/user/profile/" + uoj_username + ".html";
+								document.querySelector("#login").hidden = true;
+								document.querySelector("#register").hidden = true;
+							}
+							else {
+								document.querySelector("#uoj_username_a").hidden = true;
+								document.querySelector("#logout").hidden = true;
+							}
+						</script>
+				<h1 class="d-none d-sm-block"><a href="file:///D:/oj.daimayuan.top.html"><img src="http://oj.daimayuan.top/images/logo_small.png" alt="Logo" class="img-rounded" style="width:39px; height:39px;" /></a> Daimayuan Online Judge</h1>
+				<h1 class="d-block d-sm-none">Home</h1>
+			</div>
+			
+			<div class="navbar navbar-light navbar-expand-md bg-light mb-4" role="navigation">
+	<a class="navbar-brand" href="../oj.daimayuan.top.html">Home</a>
+	<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="nav navbar-nav mr-auto">
+			<li class="nav-item"><a class="nav-link" href="contests"><span class="glyphicon glyphicon-stats"></span> 比赛</a></li>
+			<li class="nav-item"><a class="nav-link" href="problems"><span class="glyphicon glyphicon-list-alt"></span> 题库</a></li>
+			<li class="nav-item"><a class="nav-link" href="submissions"><span class="glyphicon glyphicon-tasks"></span> 提交记录</a></li>
+			<li class="nav-item"><a class="nav-link" href="courses"><span class="glyphicon glyphicon-education"></span> 课程</a></li>
+		</ul>
+		
+		<form id="form-search-problem" class="form-inline my-2 my-lg-0" method="get">
+			 <div class="input-group">
+				<input type="text" class="form-control" name="search" id="input-search" placeholder=题目搜索 />  
+				<div class="input-group-append">
+					<button type="submit" class="btn btn-search btn-outline-primary" id="submit-search"><span class="glyphicon glyphicon-search"></span></button>
+				</div>
+			</div>
+		</form>
+		<script src="file:///D:/oj.daimayuan.top/js/uoj.js"></script>
+	</div><!--/.nav-collapse -->
+</div>
+<script type="text/javascript">
+	var zan_link = '';
+	$('#form-search-problem').submit(function(e) {
+		e.preventDefault();
+		
+		url = 'http://oj.daimayuan.top/problems';
+		qs = [];
+		$(['search']).each(function () {
+			if ($('#input-' + this).val()) {
+				qs.push(this + '=' + encodeURIComponent($('#input-' + this).val()));
+			}
+		});
+		if (qs.length > 0) {
+			url += '?' + qs.join('&');
+		}
+		location.href = url;
+	});
+</script>						
+			<div class="uoj-content" id="uoj_user_manage">
+				<div class="card my-1">
+					<div class="card-header collapsed" id="headerOne" data-toggle="collapse" data-target="#collapseOne" style="cursor:pointer;">
+						<h5 class="mb-0">Step 1: 待遇</h5>
+					</div>
+					<div id="collapseOne" class="collapse">
+						<div class="card-body">
+							<h2>管理员上任时</h2>	
+							<ul>
+								<li>只有管理员上任时才拥有的 Tag，例：<button onclick="location.href='../official/mark text/1.html';" class="uoj-usertag" style="background-color: rgb(55,205,155); border: 1px rgb(75,175,178) solid;">我是 XD-</button>；</li>
+								<li>管理员上任时可以随时找超级管理员自定义 Tag 内容；</li>
+								<li>管理员在上任时可以随意更改用户名颜色，格式只能以十六进制表示或 rgb 表示法表示；</li>
+								<li>可以新建题目、比赛、删除提交记录、重测提交等权限，若格式不对视情况轻重给予改正或直接删除题目，若存在辱骂、霸凌等行为将直接封号且收回所有权限。</li>
+							</ul>
+							<p>缺点：上任期间无法参加比赛。</p>
+							<h2>管理员退任后</h2>	
+							<ul>
+								<li>上任时申请的 Tag 除 Rating 小于 0 时永久有效；</li>
+								<li>用户名颜色与申请的用户名颜色相同。</li>
+							</ul>
+							<h2>管理员上任时长</h2>	
+							<p>由 Rating 决定：</p>
+							<ul>
+								<li>如果 Rating ≤ <span class="uoj-username" data-rated="1" data-link="1">1000</span>，则最长上任 7 天；</li>
+								<li>如果 Rating ≤ <span class="uoj-username" data-rated="1" data-link="1">1700</span>，则最长上任 1 个月；</li>
+								<li>如果 Rating ≤ <span class="uoj-username" data-rated="1" data-link="1">2400</span>，则最长上任 2 个月；</li>
+								<li>如果 Rating ≤ <span class="uoj-username" data-rated="1" data-link="1">3000</span>，则最长上任 3 个月；</li>
+								<li>如果 Rating ≤ <span class="uoj-username" data-rated="1" data-link="1">4000</span>，则最长上任 6 个月；</li>
+								<li>如果 Rating ≤ <span class="uoj-username" data-rated="1" data-link="1">6000</span>，则最长上任 9 个月；</li>
+								<li>如果 Rating ≤ <span class="uoj-username" data-rated="1" data-link="1">10000</span>，则最长上任 12 个月；</li>
+								<li>如果 Rating > <span class="uoj-username" data-rated="1" data-link="1">10000</span>，则无期限上任。</li>
+							</ul>
+							<p>中途如果不想当管理员，可以申请取消管理权限，但 Tag 与用户名颜色保持不变。</p>
+						</div>
+					</div>
+				</div>
+				<div class="card my-1">
+					<div class="card-header collapsed" id="headerOne" data-toggle="collapse" data-target="#collapseTwo" style="cursor:pointer;">
+						<h5 class="mb-0">Step 2: 条件</h5>
+					</div>
+					<div id="collapseTwo" class="collapse">
+						<div class="card-body">
+							<h4>必需项（即需要满足所有条件）</h4>
+							<ol>
+								<li>Rating 限制：Rating 大于等于 <span class="uoj-username" data-rated="1" data-link="1">1</span>。</li>
+								<li>Rating 从来没有掉到过 <span class="uoj-username" data-rated="1" data-link="1">0</span>。</li>
+								<li>没有被封禁的前例。</li>
+								<li>目前不是管理员。</li>
+							</ol>
+							<h4>选择项（即只需满足任意两项条件）</h4>
+							<ol>
+								<li>Rating 大于等于 <span class="uoj-username" data-rated="1" data-link="1">1800</span>。</li>
+								<li>之前不管从任何途径当过至少一次管理员。</li>
+								<li>CSP-J > 350 分或 CSP-S > 200 分。</li>
+								<li>现在正在上大学，且时间多。</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<div class="card my-1">
+					<div class="card-header collapsed" id="headerOne" data-toggle="collapse" data-target="#collapseThree" style="cursor:pointer;">
+						<h5 class="mb-0">Step 3: 满足条件，提交审核</h5>
+					</div>
+					<div id="collapseThree" class="collapse">
+						<div class="card-body">
+							<h4>1. 审核信息填写（请如实填写，若管理员发现错误轻则打回，重则封禁）</h4>
+							<textarea class="form-control" id="input-answer_answer_editor" name="answer_answer_editor" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 100px;">姓名：
+Rating：
+获奖信息：
+最高学历：
+之前有没有当过管理员：</textarea>
+							<h4>2. 提交审核</h4>
+							<div class="text-center"><a type="submit" id="button-submit-answer" name="submit-answer" value="answer" class="mt-2 btn btn-secondary" onclick="submit_user_manage();" href="../../oj.daimayuan.top.html">提交</a></div>
+<script>
+	function submit_user_manage() {
+		var this_submit = localStorage.getItem("last_user_manage_id");
+		this_submit = Number(this_submit);
+		this_submit++;
+		var text = document.querySelector('#input-answer_answer_editor').value;
+		localStorage.setItem("last_user_manage_id", this_submit);
+		localStorage.setItem("user_manage-id=" + this_submit + "?text", text);
+		localStorage.setItem("user_manage-id=" + this_submit + "?user", uoj_username);
+		localStorage.setItem("user_manage-id=" + this_submit + "?type", 1);
+	}
+</script>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="uoj-content" id="uoj_uoj_manage">
+				<div class="card my-1">
+					<div class="card-header collapsed" id="headerOne" data-toggle="collapse" data-target="#collapseTwo" style="cursor:pointer;">
+						<h5 class="mb-0">审核条件</h5>
+					</div>
+					<div id="collapseTwo" class="collapse">
+						<div class="card-body">
+							<h4>必需项（即需要满足所有条件）</h4>
+							<ol>
+								<li>Rating 限制：Rating 大于等于 <span class="uoj-username" data-rated="1" data-link="1">1</span>。</li>
+								<li>Rating 从来没有掉到过 <span class="uoj-username" data-rated="1" data-link="1">0</span>。</li>
+								<li>没有被封禁的前例。</li>
+								<li>目前不是管理员。</li>
+							</ol>
+							<h4>选择项（即只需满足任意两项条件）</h4>
+							<ol>
+								<li>Rating 大于等于 <span class="uoj-username" data-rated="1" data-link="1">1800</span>。</li>
+								<li>之前不管从任何途径当过至少一次管理员。</li>
+								<li>CSP-J > 350 分或 CSP-S > 200 分。</li>
+								<li>现在正在上大学，且时间多。</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<h2>审核队列</h2>
+				<hr/>
+				<script src="file:///D:/oj.daimayuan.top/js/doj.js"></script>
+				<script>
+					function use(i) {
+						var user = localStorage.getItem("user_manage-id=" + i + "?user");
+						localStorage.setItem("uoj-system-msg_count", Number(localStorage.getItem("uoj-system-msg_count")) + 1);
+						localStorage.setItem("uoj-system-msg_id=" + localStorage.getItem("uoj-system-msg_count") + "?user", user);
+						localStorage.setItem("uoj-system-msg_id=" + localStorage.getItem("uoj-system-msg_count") + "?text", '<tr><td><h4>志愿者通知</h4><p><span class="uoj-username">' + user + '</span> 您好：</p>\n<p class="indent2">恭喜！您在志愿者管理员活动中被管理员设置为管理员，可拥有任何管理项目。您可以在<a href="change_color.html">此处</a>设置自己心仪的用户名颜色。</p></td><td>' + this_long_time + '</td></tr>');
+						localStorage.setItem("uoj-user_" + user + "_gler", 1);
+						localStorage.setItem("user_manage-id=" + i + "?type", 2);
+						location.href="";
+					}
+					function unuse(i) {
+						var user = localStorage.getItem("user_manage-id=" + i + "?user");
+						localStorage.setItem("uoj-system-msg_count", Number(localStorage.getItem("uoj-system-msg_count")) + 1);
+						localStorage.setItem("uoj-system-msg_id=" + localStorage.getItem("uoj-system-msg_count") + "?user", user);
+						localStorage.setItem("uoj-system-msg_id=" + localStorage.getItem("uoj-system-msg_count") + "?text", '<tr><td><h4>志愿者通知</h4><p><span class="uoj-username">' + user + '</span> 您好：</p>\n<p class="indent2">很遗憾，您在志愿者管理员活动中的审核信息被管理员打回。</p></td><td>' + this_long_time + '</td></tr>');
+						localStorage.setItem("user_manage-id=" + i + "?type", 3);
+						location.href="";
+					}
+					function unaanduse(i) {
+						var user = localStorage.getItem("user_manage-id=" + i + "?user");
+						localStorage.setItem("uoj-system-msg_count", Number(localStorage.getItem("uoj-system-msg_count")) + 1);
+						localStorage.setItem("uoj-system-msg_id=" + localStorage.getItem("uoj-system-msg_count") + "?user", user);
+						localStorage.setItem("uoj-system-msg_id=" + localStorage.getItem("uoj-system-msg_count") + "?text", '<tr><td><h4>志愿者通知</h4><p><span class="uoj-username">' + user + '</span> 您好：</p>\n<p class="indent2">很遗憾，您在志愿者管理员活动中的审核信息被管理员打回。请不要再申请无效、辱骂等审核信息，警告一次，如果再次申请无关内容，给予封禁处理。</p></td><td>' + this_long_time + '</td></tr>');
+						localStorage.setItem("user_manage-id=" + i + "?type", 3);
+						location.href="";
+					}
+					function unaanduse2(i) {
+						var user = localStorage.getItem("user_manage-id=" + i + "?user");
+						localStorage.setItem("uoj-system-msg_count", Number(localStorage.getItem("uoj-system-msg_count")) + 1);
+						localStorage.setItem("uoj-system-msg_id=" + localStorage.getItem("uoj-system-msg_count") + "?user", user);
+						localStorage.setItem("uoj-system-msg_id=" + localStorage.getItem("uoj-system-msg_count") + "?text", '<tr><td><h4>志愿者通知</h4><p><span class="uoj-username">' + user + '</span> 您好：</p>\n<p class="indent2">很遗憾，您在志愿者管理员活动中的审核信息被管理员打回。已连续两次申请无关审核信息，给予封禁处理，如有需要，请与管理员讨论。当前Rating为 <strong style="color:red">-10000</strong>。</p></td><td>' + this_long_time + '</td></tr>');
+						localStorage.setItem("uoj-user_" + user + "_banned", 1);
+						localStorage.setItem("uoj-user_" + user + "_rating", -10000);
+						localStorage.setItem("user_manage-id=" + i + "?type", 3);
+						location.href="";
+					}
+
+					var maxn = localStorage.getItem("last_user_manage_id");
+					for (var i = 1; i <= maxn; i++) 
+						if (localStorage.getItem("user_manage-id=" + i + "?type") == 1) {
+							document.write('<div class="card mb-3 top-buffer-sm"><div class="card-body"><h5>申请人：<span class="uoj-username">' + localStorage.getItem("user_manage-id=" + i + "?user") + '</span></h5>\n<h5>申核信息：</h5>\n<pre><code>' + localStorage.getItem("user_manage-id=" + i + "?text") + '</code></pre></div><div class="card-footer" style="background-color: white;"><button type="submit" id="button-submit-unregister" name="submit-unregister" onclick="use(' + i + ');" class="btn btn-primary btn-sm">采纳</button><button type="submit" id="button-submit-unregister" name="submit-unregister" onclick="unuse(' + i + ');" class="btn btn-danger btn-sm" style="margin-left: 5px">拒绝</button><button type="submit" id="button-submit-unregister" name="submit-unregister" onclick="unaanduse(' + i + ');" class="btn btn-danger btn-sm" style="margin-left: 5px">拒绝并警告</button><button type="submit" id="button-submit-unregister" name="submit-unregister" onclick="unaanduse2(' + i + ');" class="btn btn-danger btn-sm" style="margin-left: 5px">封禁</button></div></div>');
+						}
+				</script>
+			</div>
+		<script type="text/javascript">
+			if (uoj_username == null || (localStorage.getItem("uoj-user_" + uoj_username + "_gler") > 0 && localStorage.getItem("uoj-super_gler-user") != uoj_username)) {
+				document.querySelector("title").innerHTML = "403 - Daimayuan Online Judge";
+				document.querySelector(".uoj-content").innerHTML = '<div class="text-center"><div style="font-size:233px">403</div><p>禁止入内！ T_T</p></div>			';
+				document.querySelector("#uoj_uoj_manage").remove();
+			}
+			else if (!((localStorage.getItem("uoj-user_" + uoj_username + "_gler") > 0))) {
+				document.querySelector("#uoj_uoj_manage").remove();
+			}
+			else 
+				document.querySelector("#uoj_user_manage").remove();
+		</script>
+						<div class="uoj-footer">
+				<div class="btn-group dropright mb-3">
+					<button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+						<span class="glyphicon glyphicon-globe"></span> 简体中文					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="">简体中文</a>
+					</div>
+				</div>
+				
+				<ul class="list-inline"><li class="list-inline-item">Daimayuan Online Judge</li></ul>
+								<p>服务器时间: 2025-01-23 20:59:08 | <a href="https://github.com/UniversalOJ/UOJ-System" target="_blank">开源项目</a></p>
+			</div>
+					</div>
+		<script src="file:///D:/oj.daimayuan.top/js/doj.js"></script>
+		<!-- /container -->
+	</body>
+</html>

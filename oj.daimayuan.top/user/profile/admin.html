@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script type="text/javascript">
+			window.this_id = "admin";
+			document.write('<title>' + this_id + ' - 用户信息 - Daimayuan Online Judge</title>');
+		</script>
+
+
+		<script type="text/javascript">uojHome = 'http://oj.daimayuan.top'</script>
+
+		<!-- Bootstrap core CSS -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/bootstrap.min.css?v=2019.5.31" />		<!-- Bootstrap Glyphicons CSS-->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/bootstrap-glyphicons.min.css?v=2019.5.31" />
+		<!-- Custom styles for this template -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/uoj-theme.css?v=2.3333" />		
+		<!-- jQuery (necessary for Bootstrap\'s JavaScript plugins) -->
+		<script src="http://oj.daimayuan.top/js/jquery.min.js"></script>		
+		<!-- jQuery autosize -->
+		<script src="http://oj.daimayuan.top/js/jquery.autosize.min.js"></script>		<script type="text/javascript">
+			$(document).ready(function() {
+				$('textarea').autosize();
+			});
+		</script>
+		
+		<!-- jQuery cookie -->
+		<script src="http://oj.daimayuan.top/js/jquery.cookie.min.js"></script>		
+		<!-- jQuery modal -->
+		<script src="http://oj.daimayuan.top/js/jquery.modal.js"></script>		
+				
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="http://oj.daimayuan.top/js/popper.min.js?v=2019.5.31"></script>		<script src="http://oj.daimayuan.top/js/bootstrap.min.js?v=2019.5.31"></script>		
+		<!-- Color converter -->
+		<script src="http://oj.daimayuan.top/js/color-converter.min.js"></script>		
+		<!-- uoj -->
+		<script src="file:///D:/oj.daimayuan.top/js/uoj.js"></script>		
+		<!-- readmore -->
+		<script src="http://oj.daimayuan.top/js/readmore/readmore.min.js"></script>		
+		<!-- LAB -->
+		<script src="http://oj.daimayuan.top/js/LAB.min.js"></script>
+		<!-- favicon -->
+		<link rel="shortcut icon" href="http://oj.daimayuan.top/images/favicon.ico" />
+		
+				
+				
+				<!-- MD5 -->
+		<script src="http://oj.daimayuan.top/js/md5.min.js"></script>				
+				
+				
+				
+				
+		
+				
+				
+				
+				
+				
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<script type="text/javascript">
+		before_window_unload_message = null;
+		$(window).on('beforeunload', function() {
+			if (before_window_unload_message !== null) {
+				return before_window_unload_message;
+			}
+		});
+		</script>
+		
+			</head>
+	<body role="document">
+		<div class="container theme-showcase" role="main">
+						<div>
+				<ul class="nav nav-pills float-right" role="tablist">
+									<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="uoj_username_a">
+							<span id="uoj_username_page" class="uoj-username" data-rating="1500" data-link="0"></span> 						</a>
+						
+						<ul class="dropdown-menu" role="menu">
+							<li role="presentation"><a class="dropdown-item" id="my_chat">个人信息</a></li>
+							<li role="presentation"><a class="dropdown-item" href="file:///D:/oj.daimayuan.top/user/system-msg.html">系统消息&nbsp;&nbsp;</a></li>
+													</ul>
+					</li>
+					<li id="login" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/login.html">登录</a></li>
+					<li id="register" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/register.html">注册</a></li>
+					<li id="logout" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/logout.html">登出</a></li>
+								</ul><script type="text/javascript">
+							var uoj_username = localStorage.getItem("uoj-username");
+							if (uoj_username != null) {
+								document.querySelector("#uoj_username_page").innerHTML = uoj_username;
+								document.querySelector("#my_chat").href = "file:///D:/oj.daimayuan.top/user/profile/" + uoj_username + ".html";
+								document.querySelector("#login").hidden = true;
+								document.querySelector("#register").hidden = true;
+							}
+							else {
+								document.querySelector("#uoj_username_a").hidden = true;
+								document.querySelector("#logout").hidden = true;
+							}
+						</script>
+				<h1 class="d-none d-sm-block"><a href="file:///D:/oj.daimayuan.top.html"><img src="http://oj.daimayuan.top/images/logo_small.png" alt="Logo" class="img-rounded" style="width:39px; height:39px;" /></a> Daimayuan Online Judge</h1>
+				<h1 class="d-block d-sm-none">Home</h1>
+			</div>
+			
+			<div class="navbar navbar-light navbar-expand-md bg-light mb-4" role="navigation">
+	<a class="navbar-brand" href="file:///D:/oj.daimayuan.top.html">Home</a>
+	<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="nav navbar-nav mr-auto">
+			<li class="nav-item"><a class="nav-link" href="contests"><span class="glyphicon glyphicon-stats"></span> 比赛</a></li>
+			<li class="nav-item"><a class="nav-link" href="problems"><span class="glyphicon glyphicon-list-alt"></span> 题库</a></li>
+			<li class="nav-item"><a class="nav-link" href="submissions"><span class="glyphicon glyphicon-tasks"></span> 提交记录</a></li>
+			<li class="nav-item"><a class="nav-link" href="courses"><span class="glyphicon glyphicon-education"></span> 课程</a></li>
+		</ul>
+		
+		<form id="form-search-problem" class="form-inline my-2 my-lg-0" method="get">
+			 <div class="input-group">
+				<input type="text" class="form-control" name="search" id="input-search" placeholder=题目搜索 />  
+				<div class="input-group-append">
+					<button type="submit" class="btn btn-search btn-outline-primary" id="submit-search"><span class="glyphicon glyphicon-search"></span></button>
+				</div>
+			</div>
+		</form>
+		<script src="file:///D:/oj.daimayuan.top/js/uoj.js"></script>
+	</div><!--/.nav-collapse -->
+</div>
+<script type="text/javascript">
+	var zan_link = '';
+	$('#form-search-problem').submit(function(e) {
+		e.preventDefault();
+		
+		url = 'http://oj.daimayuan.top/problems';
+		qs = [];
+		$(['search']).each(function () {
+			if ($('#input-' + this).val()) {
+				qs.push(this + '=' + encodeURIComponent($('#input-' + this).val()));
+			}
+		});
+		if (qs.length > 0) {
+			url += '?' + qs.join('&');
+		}
+		location.href = url;
+	});
+</script>
+			<div class="uoj-content">
+<div class="card border-info">
+		<h5 class="card-header bg-info">用户信息</h5>
+		<div class="card-body">
+			<div class="row mb-4">
+				<div class="col-md-4 order-md-9">
+					<!-- <img class="media-object img-thumbnail d-block mx-auto" alt="Hussein Avatar" src="//cn.gravatar.com/avatar/e38f59fec57dbbd5524aaa5e2f793659?d=mm&amp;s=256" /> -->
+				</div>
+				<div class="col-md-8 order-md-1">
+					<h2><script>document.write('<span class="uoj-honor">' + this_id + '</span>');</script> <span><strong style="color:black"></strong></span></h2>
+					<div class="list-group">
+						<div class="list-group-item">
+							<h4 class="list-group-item-heading">Rating</h4>
+							<p class="list-group-item-text"><strong style="color:red"><script>document.write(localStorage.getItem("uoj-user_" + this_id + "_rating"));</script></strong></p>
+						</div>
+						<div class="list-group-item">
+							<h4 class="list-group-item-heading">格言</h4>
+							<p class="list-group-item-text"><script>document.write(localStorage.getItem("uoj-user_" + this_id + "_maxim"));</script></p>
+						</div>
+											</div>
+				</div>
+			</div>
+									
+		<script src="file:///D:/oj.daimayuan.top/js/doj.js"></script>
+									<script>
+										if (uoj_username == this_id) 
+											document.write('<a type="button" class="btn btn-info btn-sm" href="../modify-profile.html"><span class="glyphicon glyphicon-pencil"></span> 更改个人信息</a>');
+										if (localStorage.getItem("uoj-user_" + uoj_username + "_gler") > 0 && (!(localStorage.getItem("uoj-user_" + this_id + "_gler") > 0) || (localStorage.getItem("uoj-super_gler-user") == uoj_username && uoj_username != this_id)) && localStorage.getItem("uoj-user_" + this_id + "_banned") == null) 
+											document.write('<a type="button" class="btn btn-danger btn-sm" href="" onclick="banned();">封禁</a>\n');
+										if (localStorage.getItem("uoj-user_" + uoj_username + "_gler") > 0 && (!(localStorage.getItem("uoj-user_" + this_id + "_gler") > 0) || (localStorage.getItem("uoj-super_gler-user") == uoj_username && uoj_username != this_id)) && localStorage.getItem("uoj-user_" + this_id + "_banned") != null) 
+											document.write('<a type="button" class="btn btn-primary btn-sm" href="" onclick="banned_off();">解封</a>\n');
+										if (localStorage.getItem("uoj-user_" + uoj_username + "_gler") > 0 && (!(localStorage.getItem("uoj-user_" + this_id + "_gler") > 0) || (localStorage.getItem("uoj-super_gler-user") == uoj_username && uoj_username != this_id)) && localStorage.getItem("uoj-user_" + this_id + "_gler") != null && localStorage.getItem("uoj-user_" + this_id + "_banned") == null) 
+											document.write('<a type="button" class="btn btn-warning btn-sm" href="" onclick="student();">设置为学员</a>\n');
+										if (localStorage.getItem("uoj-user_" + uoj_username + "_gler") > 0 && (!(localStorage.getItem("uoj-user_" + this_id + "_gler") > 0) || (localStorage.getItem("uoj-super_gler-user") == uoj_username && uoj_username != this_id)) && localStorage.getItem("uoj-user_" + this_id + "_gler") != 0 && localStorage.getItem("uoj-user_" + this_id + "_banned") == null) 
+											document.write('<a type="button" class="btn btn-info btn-sm" href="" onclick="super_student();">设置为高级学员</a>\n');
+										if (localStorage.getItem("uoj-super_gler-user") == uoj_username && uoj_username != this_id && !(localStorage.getItem("uoj-user_" + this_id + "_gler") > 0) && localStorage.getItem("uoj-user_" + this_id + "_banned") == null) 
+											document.write('<a type="button" class="btn btn-primary btn-sm" href="" onclick="gler();">设置为管理员</a>\n');
+										if (localStorage.getItem("uoj-super_gler-user") == uoj_username && uoj_username != this_id && localStorage.getItem("uoj-user_" + this_id + "_banned") == null) 
+											document.write('<a type="button" class="btn btn-primary btn-sm" href="" onclick="super_gler();">转让超级管理员</a>\n');
+
+										function banned() {
+											if (!confirm('确定要封禁吗？确定后 Ta 将不能登录。')) return;
+											localStorage.setItem("uoj-user_" + this_id + "_banned", 1);
+											localStorage.removeItem("uoj-user_" + this_id + "_gler");
+											if (this_id == uoj_username) 
+												localStorage.removeItem("uoj-username");
+		localStorage.setItem("uoj-user_" + this_id + "_rating", -10000);
+		localStorage.setItem("uoj-system-msg_count", Number(localStorage.getItem("uoj-system-msg_count")) + 1);
+		localStorage.setItem("uoj-system-msg_id=" + localStorage.getItem("uoj-system-msg_count") + "?user", this_id);
+		localStorage.setItem("uoj-system-msg_id=" + localStorage.getItem("uoj-system-msg_count") + "?text", '<tr><td><h4>封禁通知</h4><p><span class="uoj-username">' + this_id + '</span> 您好：</p>\n<p class="indent2">您已被管理员封禁，如有需要，请与管理员讨论。当前Rating为 <strong style="color:red">-10000</strong>。</p></td><td>' + this_long_time + '</td></tr>');
+										}
+										function banned_off() {
+											if (!confirm('确定要解封吗？确定后 Ta 将可以登录。')) return;
+											localStorage.removeItem("uoj-user_" + this_id + "_banned");
+		localStorage.setItem("uoj-user_" + this_id + "_rating", 0);
+		localStorage.setItem("uoj-system-msg_count", Number(localStorage.getItem("uoj-system-msg_count")) + 1);
+		localStorage.setItem("uoj-system-msg_id=" + localStorage.getItem("uoj-system-msg_count") + "?user", this_id);
+		localStorage.setItem("uoj-system-msg_id=" + localStorage.getItem("uoj-system-msg_count") + "?text", '<tr><td><h4>封禁通知</h4><p><span class="uoj-username">' + this_id + '</span> 您好：</p>\n<p class="indent2">您已被管理员解封。当前Rating为 <strong style="color:red">0</strong>。</p></td><td>' + this_long_time + '</td></tr>');
+										}
+										function student() {
+											if (!confirm('确定要设置为学员吗？确定后 Ta 将失去管理权限。')) return;
+											localStorage.removeItem("uoj-user_" + this_id + "_gler");
+										}
+										function super_student() {
+											if (!confirm('确定要设置为高级学员吗？确定后 Ta 将只能查看管理权限。')) return;
+											localStorage.setItem("uoj-user_" + this_id + "_gler", 0);
+										}
+										function gler() {
+											if (!confirm('确定要设置为管理员吗？确定后 Ta 将拥有管理权限。')) return;
+											localStorage.setItem("uoj-user_" + this_id + "_gler", 1);
+											if (localStorage.getItem("uoj-user_" + this_id + "_rating") < 1500) localStorage.setItem("uoj-user_" + this_id + "_rating", 1500);
+		localStorage.setItem("uoj-system-msg_count", Number(localStorage.getItem("uoj-system-msg_count")) + 1);
+		localStorage.setItem("uoj-system-msg_id=" + localStorage.getItem("uoj-system-msg_count") + "?user", this_id);
+		localStorage.setItem("uoj-system-msg_id=" + localStorage.getItem("uoj-system-msg_count") + "?text", '<tr><td><h4>管理员通知</h4><p><span class="uoj-username">' + this_id + '</span> 您好：</p>\n<p class="indent2">您已被管理员设置为管理员，可拥有任何管理项目。</p></td><td>' + this_long_time + '</td></tr>');
+										}
+										function super_gler() {
+											if (!confirm('是否确定转让？确定后您将成为普通管理员。')) return;
+											localStorage.setItem("uoj-user_" + this_id + "_gler", 1);
+											localStorage.setItem("uoj-super_gler-user", this_id);
+		localStorage.setItem("uoj-system-msg_count", Number(localStorage.getItem("uoj-system-msg_count")) + 1);
+		localStorage.setItem("uoj-system-msg_id=" + localStorage.getItem("uoj-system-msg_count") + "?user", this_id);
+		localStorage.setItem("uoj-system-msg_id=" + localStorage.getItem("uoj-system-msg_count") + "?text", '<tr><td><h4>超级管理员通知</h4><p><span class="uoj-username">' + this_id + '</span> 您好：</p>\n<p class="indent2">您已被超级管理员转让为超级管理员，可拥有任何超管项目。</p></td><td>' + this_long_time + '</td></tr>');
+										}
+
+									</script>
+												
+			<div class="top-buffer-lg"></div>
+			<div class="list-group">
+				<div class="list-group-item">
+					<h4 class="list-group-item-heading">Rating 变化</h4>
+					<div style="height:500px;"></div>
+				</div>
+				<div class="list-group-item">
+										<h4 class="list-group-item-heading">AC 过的题目：共 <script>document.write(localStorage.getItem("uoj-user_" + this_id + "_problems"));</script> 道题 </h4>
+					<p class="list-group-item-text">
+<script>
+for (var i = 1; i <= Number(localStorage.getItem("problem-lastid")); i++) {
+	if (localStorage.getItem("problem-id=" + i + "?name") != null && localStorage.getItem("problem-id=" + i + "?user=" + this_id + "&ac") >= 100) {
+		document.write('<a href="file:///D:/oj.daimayuan.top/problem/' + i + '.html" style="display:inline-block; width:4em;">' + i + '</a>');
+	}
+}
+					</script>		</p>
+				</div>
+			</div>
+		</div>
+
+					</div></div>
+		<div class="uoj-footer">
+				<div class="btn-group dropright mb-3">
+					<button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+						<span class="glyphicon glyphicon-globe"></span> 简体中文					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="">简体中文</a>
+					</div>
+				</div>
+				
+				<ul class="list-inline"><li class="list-inline-item">Daimayuan Online Judge</li></ul>
+								<p>服务器时间: 2025-01-23 20:59:08 | <a href="https://github.com/UniversalOJ/UOJ-System" target="_blank">开源项目</a></p>
+			</div>
+		<script src="file:///D:/oj.daimayuan.top/js/doj.js"></script>
+		<!-- /container -->
+	</body>
+</html>

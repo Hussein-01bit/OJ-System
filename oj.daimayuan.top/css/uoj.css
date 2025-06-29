@@ -1,0 +1,49 @@
+::selection {
+	background: rgba(125, 188, 255, 0.6);
+}
+
+details {
+	padding: 5px 10px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+.vjudge_sample pre {
+	background: none;
+	border: none;
+}
+
+.vjudge_sample {
+	width: 100%;
+	max-width: 700px;
+	background-color: white;
+}
+.vjudge_sample td, .vjudge_sample th {
+	border: 1.2px solid #bbb;
+	width: 0%;
+	/* max-width: 350px; */
+	overflow: auto;
+}
+.vjudge_sample th {
+	background-color: #f2f2f2;
+	height: 35px;
+	text-align: center;
+}
+.vjudge_sample td {
+	vertical-align: top;
+}
+
+.uoj-usertag {
+	border: none;
+	color: white;
+	font-size: 0.7em;
+	border-radius: 3px;
+	padding: 0.3em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+.uoj-usertag:focus {
+	outline: none;
+}
+

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<title id="problem-name"></title>
+		
+		<script type="text/javascript">
+		window.this_id = 20;
+		uojHome = 'http://oj.daimayuan.top';
+		</script>
+
+		<!-- Bootstrap core CSS -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/bootstrap.min.css?v=2019.5.31" />		<!-- Bootstrap Glyphicons CSS-->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/bootstrap-glyphicons.min.css?v=2019.5.31" />
+		<!-- Custom styles for this template -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/uoj-theme.css?v=2.3333" />		
+		<!-- jQuery (necessary for Bootstrap\'s JavaScript plugins) -->
+		<script src="http://oj.daimayuan.top/js/jquery.min.js"></script>		
+		<!-- jQuery autosize -->
+		<script src="http://oj.daimayuan.top/js/jquery.autosize.min.js"></script>		<script type="text/javascript">
+			$(document).ready(function() {
+				$('textarea').autosize();
+			});
+		</script>
+		
+		<!-- jQuery cookie -->
+		<script src="http://oj.daimayuan.top/js/jquery.cookie.min.js"></script>		
+		<!-- jQuery modal -->
+		<script src="http://oj.daimayuan.top/js/jquery.modal.js"></script>		
+				
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="http://oj.daimayuan.top/js/popper.min.js?v=2019.5.31"></script>		<script src="http://oj.daimayuan.top/js/bootstrap.min.js?v=2019.5.31"></script>		
+		<!-- Color converter -->
+		<script src="http://oj.daimayuan.top/js/color-converter.min.js"></script>		
+		<!-- uoj -->
+		<script src="file:///D:/oj.daimayuan.top/js/uoj.js"></script>		
+		<!-- readmore -->
+		<script src="http://oj.daimayuan.top/js/readmore/readmore.min.js"></script>		
+		<!-- LAB -->
+		<script src="http://oj.daimayuan.top/js/LAB.min.js"></script>
+		<!-- favicon -->
+		<link rel="shortcut icon" href="http://oj.daimayuan.top/images/favicon.ico" />
+		
+				<!-- MathJax -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$']], displayMath: [['$$','$$']]}
+    });
+    MathJax.Hub.Register.StartupHook("End", function () {
+        Codeforces.runMathJaxListeners();
+    });
+    </script>
+    <script type="text/javascript" async
+            src="https://codeforces.com/mathjax.codeforces.org/MathJax.js?config=TeX-AMS_HTML-full"
+    >
+    </script>
+				
+				<!-- MD5 -->
+		<script src="http://oj.daimayuan.top/js/md5.min.js"></script>				
+				
+				
+				
+				
+		
+				
+				
+				
+				
+				
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<script type="text/javascript">
+		before_window_unload_message = null;
+		$(window).on('beforeunload', function() {
+			if (before_window_unload_message !== null) {
+				return before_window_unload_message;
+			}
+		});
+		</script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+
+		<!-- shjs -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/sh_typical.min.css" />		<script src="http://oj.daimayuan.top/js/sh_main.min.js"></script>		<script type="text/javascript">$(document).ready(function(){sh_highlightDocument()})</script>
+				
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<script type="text/javascript">
+		before_window_unload_message = null;
+		$(window).on('beforeunload', function() {
+			if (before_window_unload_message !== null) {
+			    return before_window_unload_message;
+			}
+		});
+		</script>
+			</head>
+	<body role="document">
+		<div class="container theme-showcase" role="main">
+						<div>
+				<ul class="nav nav-pills float-right" role="tablist">
+									<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="uoj_username_a">
+							<span id="uoj_username_page" class="uoj-username" data-rating="1500" data-link="0"></span> 						</a>
+						
+						<ul class="dropdown-menu" role="menu">
+							<li role="presentation"><a class="dropdown-item" id="my_chat">个人信息</a></li>
+							<li role="presentation"><a class="dropdown-item" href="file:///D:/oj.daimayuan.top/user/system-msg.html">系统消息&nbsp;&nbsp;</a></li>
+													</ul>
+					</li>
+					<li id="login" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/login.html">登录</a></li>
+					<li id="register" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/register.html">注册</a></li>
+					<li id="logout" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/logout.html">登出</a></li>
+								</ul><script type="text/javascript">
+							var uoj_username = localStorage.getItem("uoj-username");
+							if (uoj_username != null) {
+								document.querySelector("#uoj_username_page").innerHTML = uoj_username;
+								document.querySelector("#my_chat").href = "file:///D:/oj.daimayuan.top/user/profile/" + uoj_username + ".html";
+								document.querySelector("#login").hidden = true;
+								document.querySelector("#register").hidden = true;
+							}
+							else {
+								document.querySelector("#uoj_username_a").hidden = true;
+								document.querySelector("#logout").hidden = true;
+							}
+						</script>
+				<h1 class="d-none d-sm-block"><a href="../oj.daimayuan.top.html"><img src="http://oj.daimayuan.top/images/logo_small.png" alt="Logo" class="img-rounded" style="width:39px; height:39px;" /></a> Daimayuan Online Judge</h1>
+				<h1 class="d-block d-sm-none">Home</h1>
+			</div>
+			
+			<div class="navbar navbar-light navbar-expand-md bg-light mb-4" role="navigation">
+	<a class="navbar-brand" href="../oj.daimayuan.top.html">Home</a>
+	<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="nav navbar-nav mr-auto">
+			<li class="nav-item"><a class="nav-link" href="contests"><span class="glyphicon glyphicon-stats"></span> 比赛</a></li>
+			<li class="nav-item"><a class="nav-link" href="problems"><span class="glyphicon glyphicon-list-alt"></span> 题库</a></li>
+			<li class="nav-item"><a class="nav-link" href="submissions"><span class="glyphicon glyphicon-tasks"></span> 提交记录</a></li>
+			<li class="nav-item"><a class="nav-link" href="courses"><span class="glyphicon glyphicon-education"></span> 课程</a></li>
+		</ul>
+		
+		<form id="form-search-problem" class="form-inline my-2 my-lg-0" method="get">
+			 <div class="input-group">
+				<input type="text" class="form-control" name="search" id="input-search" placeholder=题目搜索 />  
+				<div class="input-group-append">
+					<button type="submit" class="btn btn-search btn-outline-primary" id="submit-search"><span class="glyphicon glyphicon-search"></span></button>
+				</div>
+			</div>
+		</form>
+		<script src="file:///D:/oj.daimayuan.top/js/uoj.js"></script>
+	</div><!--/.nav-collapse -->
+</div>
+<script type="text/javascript">
+	var zan_link = '';
+	$('#form-search-problem').submit(function(e) {
+		e.preventDefault();
+		
+		url = 'http://oj.daimayuan.top/problems';
+		qs = [];
+		$(['search']).each(function () {
+			if ($('#input-' + this).val()) {
+				qs.push(this + '=' + encodeURIComponent($('#input-' + this).val()));
+			}
+		});
+		if (qs.length > 0) {
+			url += '?' + qs.join('&');
+		}
+		location.href = url;
+	});
+</script>
+			<div class="uoj-content">	
+<h1 class="page-header text-center" id="proname"> </h1>
+
+<ul class="nav nav-tabs" role="tablist">
+	<li class="nav-item"><a class="nav-link active" href="statement.html" role="tab">编辑</a></li>
+	<li class="nav-item"><a class="nav-link" href="manageuser.html" role="tab">管理者</a></li>
+		<li class="nav-item"><a class="nav-link" href="data.html" role="tab">数据</a></li>
+		<li class="nav-item"><a class="nav-link" href="refer.html" role="tab">引用</a></li>
+		<script type="text/javascript">
+			document.write('<li class="nav-item"><a class="nav-link" href="../../' + this_id + '.html" role="tab">返回</a></li>');
+		</script>
+			</ul>
+<div class="top-buffer-md">
+	<div class="row">
+		<div id="div-contestname" class="col-sm-6">
+			<label>标题</label>
+			<input type="text" class="form-control" id="input-problemname" name="contestname" />
+		</div>
+		<div id="div-contestname" class="col-sm-6">
+			<label>标签（多个标签用逗号隔开）</label>
+			<input type="text" class="form-control" id="input-problemtag" name="contestname" />
+		</div>
+	</div>
+	<div id="div-contestname">
+		<label style="display: block;">内容</label>
+		<button id="saved" type="button" class="btn btn-sm btn-success" data-original-title="" title=""><span class="glyphicon glyphicon-saved"></span></button><button id="save" hidden type="button" class="btn btn-sm btn-warning" data-original-title="" title="" onclick="save();"><span class="glyphicon glyphicon-save"></span></button>
+		<div id="div-custom_test_problem_editor"><textarea class="form-control" id="input-custom_test_problem_editor" name="custom_test_problem_editor" style="overflow: hidden; overflow-wrap: break-word; resize: none; max-height: 500px;">### 题目背景
+
+&lt;!--     --&gt;
+
+### 题目描述
+
+&lt;!--     --&gt;
+
+### 输入格式
+
+&lt;!--     --&gt;
+
+### 输出格式
+
+&lt;!--     --&gt;
+
+### 样例输入1
+```
+<!--     -->
+```
+### 样例输出1
+```
+<!--     -->
+```
+
+### 样例输入2
+```
+<!--     -->
+```
+### 样例输出2
+```
+<!--     -->
+```
+
+### 数据范围与约定
+
+- 对于 $x\\%$ 的数据，保证 …… 。
+
+- 对于 $y\\%$ 的数据，保证 …… 。
+
+- 对于另外 $z\\%$ 的数据，保证 …… 。
+
+- 对于 $100\\%$ 的数据，保证 …… 。</textarea></div>
+	</div>
+	<script type="text/javascript">
+		if (localStorage.getItem("problem-id=" + this_id + "?problem_text") != null) 
+			document.getElementById("input-custom_test_problem_editor").innerHTML = localStorage.getItem("problem-id=" + this_id + "?problem_text");
+		if (localStorage.getItem("problem-id=" + this_id + "?name") != null) 
+			document.getElementById("input-problemname").value = localStorage.getItem("problem-id=" + this_id + "?name");
+		if (localStorage.getItem("problem-id=" + this_id + "?tag") != null) 
+			document.getElementById("input-problemtag").value = localStorage.getItem("problem-id=" + this_id + "?tag");
+let initialValue = document.getElementById('input-custom_test_problem_editor').value;
+document.getElementById('input-custom_test_problem_editor').addEventListener('input', function(event) {
+  if (event.target.value !== initialValue) {
+	document.querySelector("#save").hidden = false;
+	document.querySelector("#saved").hidden = true;
+  }
+});
+		function save() {
+			var input = document.getElementById("input-problemname");
+			var input_text = input.value;
+			localStorage.setItem("problem-id=" + this_id + "?name", input_text);
+			input = document.getElementById("input-problemtag");
+			input_text = input.value;
+			localStorage.setItem("problem-id=" + this_id + "?tag", input_text);
+			var textarea = document.getElementById("input-custom_test_problem_editor");
+			initialValue = textarea.value;
+			var text = textarea.value;
+			if (text != localStorage.getItem("problem-id=" + this_id + "?problem_text")) 
+				localStorage.setItem("problem-id=" + this_id + "?problem_text", text);
+			document.querySelector("#save").hidden = true;
+			document.querySelector("#saved").hidden = false;
+		}
+	</script>
+	<div class="row mt-2">
+	<div class="col-sm-6">
+				<script>
+					document.write('<a id="a-blog_view_blog" class="btn btn-info" href="../../' + this_id + '.html">查看题目</a>');
+				</script>
+			</div>
+	<div class="col-sm-6 text-right">
+			<button id="problem_see0" class="btn" style="height: 100%; width: 50%; padding: 0px;" onclick="change_see(1);"><img src="D:/oj.daimayuan.top/image/problem1.png" style="height: 100%; width: 100%;"></button>
+			<button id="problem_see1" class="btn" style="height: 100%; width: 50%; padding: 0px;" onclick="change_see(0);"><img src="D:/oj.daimayuan.top/image/problem2.png" style="height: 100%; width: 100%;"></button>
+		</div>
+	</div>
+	<script>
+		if (localStorage.getItem("problem-id=" + this_id + "?see") == 1) 
+			document.querySelector("#problem_see0").hidden = true;
+		else
+			document.querySelector("#problem_see1").hidden = true;
+		function change_see(c) {
+			if (c == 1) {
+				var r = confirm("你确定要公开吗？");
+				if (r == false) 
+					return;
+			}
+			localStorage.setItem("problem-id=" + this_id + "?see", c);
+			if (c == 1) {
+				document.querySelector("#problem_see0").hidden = true;
+				document.querySelector("#problem_see1").hidden = false;
+			}
+			else {
+				document.querySelector("#problem_see0").hidden = false;
+				document.querySelector("#problem_see1").hidden = true;
+			}
+		}
+	</script>
+</div>
+			</div>
+		<script src="file:///D:/oj.daimayuan.top/js/problem_manage.js"></script>
+						<div class="uoj-footer">
+				<div class="btn-group dropright mb-3">
+					<button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+						<span class="glyphicon glyphicon-globe"></span> 简体中文					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="">简体中文</a>
+					</div>
+				</div>
+				
+				<ul class="list-inline"><li class="list-inline-item">Daimayuan Online Judge</li></ul>
+								<p>服务器时间: 2025-01-23 20:59:08 | <a href="https://github.com/UniversalOJ/UOJ-System" target="_blank">开源项目</a></p>
+			</div>
+					</div>
+		<script src="file:///D:/oj.daimayuan.top/js/doj.js"></script>
+		<!-- /container -->
+	</body>
+</html>

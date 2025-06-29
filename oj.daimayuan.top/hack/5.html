@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<title>Hack - Daimayuan Online Judge</title>
+		
+		<script type="text/javascript">
+		window.this_id = 5;
+		uojHome = 'http://oj.daimayuan.top';
+	</script>
+
+		<!-- Bootstrap core CSS -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/bootstrap.min.css?v=2019.5.31" />		<!-- Bootstrap Glyphicons CSS-->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/bootstrap-glyphicons.min.css?v=2019.5.31" />
+		<!-- Custom styles for this template -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/uoj-theme.css?v=2.3333" />		
+		<!-- jQuery (necessary for Bootstrap\'s JavaScript plugins) -->
+		<script src="http://oj.daimayuan.top/js/jquery.min.js"></script>		
+		<!-- jQuery autosize -->
+		<script src="http://oj.daimayuan.top/js/jquery.autosize.min.js"></script>		<script type="text/javascript">
+			$(document).ready(function() {
+				$('textarea').autosize();
+			});
+		</script>
+		
+		<!-- jQuery cookie -->
+		<script src="http://oj.daimayuan.top/js/jquery.cookie.min.js"></script>		
+		<!-- jQuery modal -->
+		<script src="http://oj.daimayuan.top/js/jquery.modal.js"></script>		
+				
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="http://oj.daimayuan.top/js/popper.min.js?v=2019.5.31"></script>		<script src="http://oj.daimayuan.top/js/bootstrap.min.js?v=2019.5.31"></script>		
+		<!-- Color converter -->
+		<script src="http://oj.daimayuan.top/js/color-converter.min.js"></script>		
+		<!-- uoj -->
+		<script src="file:///D:/oj.daimayuan.top/js/uoj.js"></script>	
+		<!-- readmore -->
+		<script src="http://oj.daimayuan.top/js/readmore/readmore.min.js"></script>		
+		<!-- LAB -->
+		<script src="http://oj.daimayuan.top/js/LAB.min.js"></script>
+		<!-- favicon -->
+		<link rel="shortcut icon" href="http://oj.daimayuan.top/images/favicon.ico" />
+		
+				
+				
+				<!-- MD5 -->
+		<script src="http://oj.daimayuan.top/js/md5.min.js"></script>				
+				
+				
+				
+				
+		
+				
+				
+				
+				
+				
+		<!-- shjs -->
+		<link type="text/css" rel="stylesheet" href="http://oj.daimayuan.top/css/sh_typical.min.css" />		<script src="http://oj.daimayuan.top/js/sh_main.min.js"></script>		<script type="text/javascript">$(document).ready(function(){sh_highlightDocument()})</script>
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<script type="text/javascript">
+		before_window_unload_message = null;
+		$(window).on('beforeunload', function() {
+			if (before_window_unload_message !== null) {
+			    return before_window_unload_message;
+			}
+		});
+		</script>
+		
+			</head>
+	<body role="document">
+		<div class="container theme-showcase" role="main">
+						<div>
+				<ul class="nav nav-pills float-right" role="tablist">
+									<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="uoj_username_a">
+							<span id="uoj_username_page" class="uoj-username" data-rating="1500" data-link="0"></span> 						</a>
+						
+						<ul class="dropdown-menu" role="menu">
+							<li role="presentation"><a class="dropdown-item" id="my_chat">个人信息</a></li>
+							<li role="presentation"><a class="dropdown-item" href="file:///D:/oj.daimayuan.top/user/system-msg.html">系统消息&nbsp;&nbsp;</a></li>
+													</ul>
+					</li>
+					<li id="login" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/login.html">登录</a></li>
+					<li id="register" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/register.html">注册</a></li>
+					<li id="logout" class="nav-item" role="presentation"><a class="nav-link" href="file:///D:/oj.daimayuan.top/logout.html">登出</a></li>
+								</ul><script type="text/javascript">
+							var uoj_username = localStorage.getItem("uoj-username");
+							if (uoj_username != null) {
+								document.querySelector("#uoj_username_page").innerHTML = uoj_username;
+								document.querySelector("#my_chat").href = "file:///D:/oj.daimayuan.top/user/profile/" + uoj_username + ".html";
+								document.querySelector("#login").hidden = true;
+								document.querySelector("#register").hidden = true;
+							}
+							else {
+								document.querySelector("#uoj_username_a").hidden = true;
+								document.querySelector("#logout").hidden = true;
+							}
+						</script>
+				<h1 class="d-none d-sm-block"><a href="file:///D:/oj.daimayuan.top.html"><img src="http://oj.daimayuan.top/images/logo_small.png" alt="Logo" class="img-rounded" style="width:39px; height:39px;" /></a> Daimayuan Online Judge</h1>
+				<h1 class="d-block d-sm-none">Home</h1>
+			</div>
+			
+			<div class="navbar navbar-light navbar-expand-md bg-light mb-4" role="navigation">
+	<a class="navbar-brand" href="../oj.daimayuan.top.html">Home</a>
+	<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="nav navbar-nav mr-auto">
+			<li class="nav-item"><a class="nav-link" href="contests"><span class="glyphicon glyphicon-stats"></span> 比赛</a></li>
+			<li class="nav-item"><a class="nav-link" href="problems"><span class="glyphicon glyphicon-list-alt"></span> 题库</a></li>
+			<li class="nav-item"><a class="nav-link" href="submissions"><span class="glyphicon glyphicon-tasks"></span> 提交记录</a></li>
+			<li class="nav-item"><a class="nav-link" href="courses"><span class="glyphicon glyphicon-education"></span> 课程</a></li>
+		</ul>
+		
+		<form id="form-search-problem" class="form-inline my-2 my-lg-0" method="get">
+			 <div class="input-group">
+				<input type="text" class="form-control" name="search" id="input-search" placeholder=题目搜索 />  
+				<div class="input-group-append">
+					<button type="submit" class="btn btn-search btn-outline-primary" id="submit-search"><span class="glyphicon glyphicon-search"></span></button>
+				</div>
+			</div>
+		</form>
+		<script src="file:///D:/oj.daimayuan.top/js/uoj.js"></script>
+	</div><!--/.nav-collapse -->
+</div>
+<script type="text/javascript">
+	var zan_link = '';
+	$('#form-search-problem').submit(function(e) {
+		e.preventDefault();
+		
+		url = 'http://oj.daimayuan.top/problems';
+		qs = [];
+		$(['search']).each(function () {
+			if ($('#input-' + this).val()) {
+				qs.push(this + '=' + encodeURIComponent($('#input-' + this).val()));
+			}
+		});
+		if (qs.length > 0) {
+			url += '?' + qs.join('&');
+		}
+		location.href = url;
+	});
+</script>						
+			<div class="uoj-content">
+<div class="table-responsive"><table class="table table-bordered table-text-center"><thead><tr><th>ID</th><th>提交记录ID</th><th>题目</th><th>Hacker</th><th>Owner</th><th>结果</th><th>提交时间</th><th>测评时间</th></tr></thead><tbody><script>
+var i = this_id;
+document.write('<tr><td><a href="file:///D:/oj.daimayuan.top/hack/' + i + '.html">#' + i + '</a></td><td><a href="file:///D:/oj.daimayuan.top/submission/' + localStorage.getItem("uoj_hack_id=" + i + "?subid") + '.html">#' + localStorage.getItem("uoj_hack_id=" + i + "?subid") + '</a></td><td><a href="../problem/' + localStorage.getItem("submission-id=" + localStorage.getItem("uoj_hack_id=" + i + "?subid") + "?proid") + '.html">#' + localStorage.getItem("submission-id=" + localStorage.getItem("uoj_hack_id=" + i + "?subid") + "?proid") + '. ' + (localStorage.getItem("problem-id=" + localStorage.getItem("submission-id=" + localStorage.getItem("uoj_hack_id=" + i + "?subid") + "?proid") + "?name")) + '</a></td><td><span class="uoj-username">' + localStorage.getItem("uoj_hack_id=" + i + "?hacker") + '</span></td><td><span class="uoj-username">' + localStorage.getItem("submission-id=" + localStorage.getItem("uoj_hack_id=" + i + "?subid") + "?user") + '</span></td><td><a href="file:///D:/oj.daimayuan.top/hack/' + i + '.html" class="uoj-status">' + localStorage.getItem("uoj_hack_id=" + i + "?type") + '</a></td><td><small>' + localStorage.getItem("uoj_hack_id=" + i + "?submit_time") + '</small></td><td><small>' + localStorage.getItem("uoj_hack_id=" + i + "?judging_time") + '</small></td></tr>');
+</script></tbody></table></div>
+<div class="card border-info mb-3">
+		<div class="card-header bg-info">
+			<h4 class="card-title">详细</h4>
+		</div>
+		<div class="card-body">
+			<div id="details_details_accordion">
+
+<!-- <div class="card card-uoj-accepted mb-3"><div class="card-header" data-toggle="collapse" data-parent="#details_details_accordion" data-target="#details_details_accordion_collapse_test_1"><div class="row"><div class="col-sm-2"><h4 class="card-title">Test #1: </h4></div><div class="col-sm-2">score: 10</div><div class="col-sm-2">Accepted</div><div class="col-sm-3">time: 34ms</div><div class="col-sm-3">memory: 7464kb</div></div></div><div id="details_details_accordion_collapse_test_1" class="card-collapse collapse"></div></div> -->
+<script type="text/javascript">
+var extra = localStorage.getItem("uoj_hack_id=" + i + "?test");
+if (extra == 'AC') 
+	document.write('<div class="card card-uoj-accepted mb-3"><div class="card-header" data-toggle="collapse" data-parent="#details_details_accordion" data-target="#details_details_accordion_collapse_test_1"><div class="row"><div class="col-sm-2"><h4 class="card-title">Extra Test: </h4></div><div class="col-sm-2"></div><div class="col-sm-2">Accepted</div><div class="col-sm-3">time: ' + localStorage.getItem("uoj_hack_id=" + this_id + "?time") + 'ms</div><div class="col-sm-3">memory: ' + localStorage.getItem("uoj_hack_id=" + this_id + "?memory") + 'kb</div></div></div><div id="details_details_accordion_collapse_test_1" class="card-collapse collapse"><div class="card-body"><h4>input:</h4><pre>\n' + localStorage.getItem("uoj_hack_id=" + this_id + "?extra") + '\n</pre>\n<h4>output:</h4><pre>\n' + localStorage.getItem("uoj_hack_id=" + this_id + "?output") + '\n</pre>\n<h4>result:</h4><pre>\n' + localStorage.getItem("uoj_hack_id=" + this_id + "?result") + '\n</pre></div></div></div>');
+else if (extra == 'WA') 
+	document.write('<div class="card card-uoj-wrong mb-3"><div class="card-header" data-toggle="collapse" data-parent="#details_details_accordion" data-target="#details_details_accordion_collapse_test_' + i + '"><div class="row"><div class="col-sm-2"><h4 class="card-title">Extra Test: </h4></div><div class="col-sm-2"></div><div class="col-sm-2">Wrong Answer</div><div class="col-sm-3">time: ' + localStorage.getItem("submission-id=" + this_id + "?time") + 'ms</div><div class="col-sm-3">memory: ' + localStorage.getItem("submission-id=" + this_id + "?memory") + 'kb</div></div></div><div id="details_details_accordion_collapse_test_' + i + '" class="card-collapse collapse"><div class="card-body"><h4>input:</h4><pre>\n' + localStorage.getItem("uoj_hack_id=" + this_id + "?extra") + '\n</pre>\n<h4>output:</h4><pre>\n' + localStorage.getItem("uoj_hack_id=" + this_id + "?output") + '\n</pre>\n<h4>result:</h4><pre>\n' + localStorage.getItem("uoj_hack_id=" + this_id + "?result") + '\n</pre></div></div></div>');
+else if (extra == 'TLE') 
+	document.write('<div class="card card-uoj-tle mb-3"><div class="card-header" data-toggle="collapse" data-parent="#details_details_accordion" data-target="#details_details_accordion_collapse_test_' + i + '"><div class="row"><div class="col-sm-2"><h4 class="card-title">Extra Test: </h4></div><div class="col-sm-2"></div><div class="col-sm-2">Time Limit Exceeded</div></div></div><div id="details_details_accordion_collapse_test_' + i + '" class="card-collapse collapse"><div class="card-body"><h4>input:</h4><pre>\n' + localStorage.getItem("uoj_hack_id=" + this_id + "?extra") + '\n</pre>\n<h4>output:</h4><pre>\n' + localStorage.getItem("uoj_hack_id=" + this_id + "?output") + '\n</pre>\n<h4>result:</h4><pre>\n' + localStorage.getItem("uoj_hack_id=" + this_id + "?result") + '\n</pre></div></div></div>');
+else if (extra == 'MLE') 
+	document.write('<div class="card card-uoj-wrong mb-3"><div class="card-header" data-toggle="collapse" data-parent="#details_details_accordion" data-target="#details_details_accordion_collapse_test_' + i + '"><div class="row"><div class="col-sm-2"><h4 class="card-title">Extra Test: </h4></div><div class="col-sm-2"></div><div class="col-sm-2">Memory Limit Exceeded</div></div></div><div id="details_details_accordion_collapse_test_' + i + '" class="card-collapse collapse"><div class="card-body"><h4>input:</h4><pre>\n' + localStorage.getItem("uoj_hack_id=" + this_id + "?extra") + '\n</pre>\n<h4>output:</h4><pre>\n' + localStorage.getItem("uoj_hack_id=" + this_id + "?output") + '\n</pre>\n<h4>result:</h4><pre>\n' + localStorage.getItem("uoj_hack_id=" + this_id + "?result") + '\n</pre></div></div></div>');
+else if (extra == 'RE') 
+	document.write('<div class="card card-uoj-wrong mb-3"><div class="card-header" data-toggle="collapse" data-parent="#details_details_accordion" data-target="#details_details_accordion_collapse_test_' + i + '"><div class="row"><div class="col-sm-2"><h4 class="card-title">Extra Test: </h4></div><div class="col-sm-2"></div><div class="col-sm-2">Runtime Error</div></div></div><div id="details_details_accordion_collapse_test_' + i + '" class="card-collapse collapse"><div class="card-body"><h4>input:</h4><pre>\n' + localStorage.getItem("uoj_hack_id=" + this_id + "?extra") + '\n</pre>\n<h4>output:</h4><pre>\n' + localStorage.getItem("uoj_hack_id=" + this_id + "?output") + '\n</pre>\n<h4>result:</h4><pre>\n' + localStorage.getItem("uoj_hack_id=" + this_id + "?result") + '\n</pre></div></div></div>');
+	</script>
+
+</div>					</div>
+
+	</div>
+<div class="table-responsive"><table class="table table-bordered table-text-center"><thead><tr><th>ID</th><th>题目</th><th>提交者</th><th>结果</th><th>用时</th><th>内存</th><th>语言</th><th>文件大小</th><th>提交时间</th><th>测评时间</th></tr></thead><tbody><script type="text/javascript">
+i = localStorage.getItem("uoj_hack_id=" + i + "?subid");
+document.write('<tr><td><a href="../submission/' + i + '.html">#' + i + '</a></td><td><a href="../problem/' + localStorage.getItem("submission-id=" + i + "?proid") + '.html">#' + localStorage.getItem("submission-id=" + i + "?proid") + '. ' + (localStorage.getItem("problem-id=" + localStorage.getItem("submission-id=" + i + "?proid") + "?name")) + '</a></td><td><span class="uoj-username" data-rating="1500">' + localStorage.getItem("submission-id=" + i + "?user") + '</span></td><td><a href="../submission/' + i + '.html" class="uoj-score">' + localStorage.getItem("submission-id=" + i + "?type") + '</a></td><td>' + (localStorage.getItem("submission-id=" + i + "?time") != null ? localStorage.getItem("submission-id=" + i + "?time") + 'ms' : '/') + '</td><td>' + (localStorage.getItem("submission-id=" + i + "?memory") != null ? localStorage.getItem("submission-id=" + i + "?memory") + 'kb' : '/') + '</td><td><a href="../submission/' + i + '.html">' + localStorage.getItem("submission-id=" + i + "?lang") + '</a></td><td>' + localStorage.getItem("submission-id=" + i + "?size") + '</td><td><small>' + localStorage.getItem("submission-id=" + i + "?submit_time") + '</small></td><td><small>' + localStorage.getItem("submission-id=" + i + "?judging_time") + '</small></td></tr>');
+</script></tbody></table></div>
+<div class="card border-info mb-3"><div class="card-header bg-info"><h4 class="card-title">answer</h4></div><div class="card-body"><pre><code id="submission-code"></code></pre></div><div class="card-footer" id="file_lang"></div></div>	
+<script type="text/javascript">
+function langname(lang) {
+	switch (lang) {
+		case 'C++14':
+		case 'C++17':
+			return 'sh_cpp';
+		case 'C':
+			return 'sh_c';
+		case 'Python2':
+		case 'Python3':
+			return 'sh_python';
+		case 'Java8':
+		case 'Java11':
+			return 'sh_java';
+		case 'Pascal':
+			return 'sh_pascal';
+		default:
+			return '';
+	}
+}
+
+var code1 = localStorage.getItem("submission-id=" + i + "?code");
+var len = code1.length;
+var code = "";
+for (let i = 0; i < len; i++) 
+	if (code1[i] != '<' && code1[1] != '>') 
+		code += code1[i];
+	else if (code1[i] == '<') 
+		code += "&lt;";
+	else 
+		code += "&gt;";
+document.querySelector("#submission-code").innerHTML = code;
+var lang = localStorage.getItem("submission-id=" + i + "?lang");
+document.querySelector("#submission-code").className = langname(lang);
+document.querySelector("#file_lang").innerHTML = "源文件, 语言: " + lang;
+</script>
+	<div class="text-right">
+		<script type="text/javascript">
+function delet() {
+	localStorage.removeItem("uoj_hack_id=" + this_id + "?type");
+	history.back();
+}
+
+
+if (Number(localStorage.getItem("uoj-user_" + uoj_username + "_gler")) > 0) {
+	if (localStorage.getItem("uoj_hack_id=" + this_id + "?type") == "Waiting") 
+		document.write('<a href="test.html" class="btn btn-primary">测试</a><br/>');
+	else 
+		document.write('<a href="test.html" class="btn btn-primary">重新测试</a><br/>');
+	document.write('<button style="margin-top: .5rem;" class="btn btn-danger" onclick="delet();">删除此Hack记录</button>')
+}
+		</script>
+	</div>
+
+
+			</div>
+		<script src="file:///D:/oj.daimayuan.top/js/hack.js"></script>
+						<div class="uoj-footer">
+				<div class="btn-group dropright mb-3">
+					<button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+						<span class="glyphicon glyphicon-globe"></span> 简体中文					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="">简体中文</a>
+					</div>
+				</div>
+				
+				<ul class="list-inline"><li class="list-inline-item">Daimayuan Online Judge</li></ul>
+								<p>服务器时间: 2025-01-23 20:59:08 | <a href="https://github.com/UniversalOJ/UOJ-System" target="_blank">开源项目</a></p>
+			</div>
+					</div>
+		<script src="file:///D:/oj.daimayuan.top/js/doj.js"></script>
+		<!-- /container -->
+	</body>
+</html>

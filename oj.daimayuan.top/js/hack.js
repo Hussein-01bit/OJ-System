@@ -1,0 +1,40 @@
+// ID
+var id = this_id;
+
+
+// USER
+var this_user = localStorage.getItem("uoj-username");
+
+
+
+var this_contest_type = "end", i = localStorage.getItem("submission-id=" + id + "?contest");
+var uoj_username = this_user;
+if (i != null) {
+if (uoj_username != null && localStorage.getItem("lastcontest_id=" + i + "?" + uoj_username + "&type") == "unstart") 
+	this_contest_type = "unend";
+else if (uoj_username != null && localStorage.getItem("lastcontest_id=" + i + "?" + uoj_username + "&type") == "unend") 
+	this_contest_type = "unend";
+else if (uoj_username != null && localStorage.getItem("lastcontest_id=" + i + "?" + uoj_username + "&type") == "wait") 
+	this_contest_type = "wait";
+else if (uoj_username != null && localStorage.getItem("lastcontest_id=" + i + "?" + uoj_username + "&type") == "judging") 
+	this_contest_type = "judging";
+else if (uoj_username == null && localStorage.getItem("lastcontest_id=" + i + "?type") == "unstart") 
+	this_contest_type = "unend";
+else if (uoj_username == null && localStorage.getItem("lastcontest_id=" + i + "?type") == "unend") 
+	this_contest_type = "unend";
+else if (uoj_username == null && localStorage.getItem("lastcontest_id=" + i + "?type") == "wait") 
+	this_contest_type = "wait";
+else if (uoj_username == null && localStorage.getItem("lastcontest_id=" + i + "?type") == "judging") 
+	this_contest_type = "judging";
+}
+
+
+
+document.querySelector("title").innerHTML = "Hack #" + this_id + " - Daimayuan Online Judge";
+if (localStorage.getItem("uoj_hack_id=" + id + "?hacker") != uoj_username && localStorage.getItem("submission-id=" + localStorage.getItem("uoj_hack_id=" + id + "?subid") + "?user") != uoj_username && !(localStorage.getItem("uoj-user_" + this_user + "_gler") > 0)) {
+	contitle = "403 - Daimayuan Online Judge";
+	var cont = document.querySelector("title");
+	if (cont != null) 
+		cont.innerHTML = contitle;
+	document.querySelector(".uoj-content").innerHTML = '<div class="text-center"><div style="font-size:233px">403</div><p>禁止入内！ T_T</p></div>			';
+}
